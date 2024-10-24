@@ -74,3 +74,87 @@ print(phone_book) #Updated a contact
 phone_book.pop("Iya")
 print(phone_book) #Deleted a Contact 
 
+# Create a simple shopping dictionary:
+shopping = {'milk': 2, 'bread': 1, 'eggs': 12}
+
+# Print how many eggs are in the shopping list
+number_eggs = shopping["eggs"]
+print(number_eggs)
+
+# Change the quantity of bread to 2
+shopping["bread"] = 2
+print(shopping)
+
+# Create a simple  dictionary:
+ages = {'Tom': 25, 'Jerry': 30, 'Sara': 28}
+
+# Print Tom's age
+tom_age = ages["Tom"]
+print(tom_age)
+
+# Add a new person 'Mike' who is 35
+ages["Mike"] = 35
+print(ages)
+
+# Remove 'Jerry' from the dictionary
+remove_jerry = ages.pop("Jerry")
+print(ages)
+
+# Print how many people are in the dictionary
+print(len(ages))
+
+# Count how many times each fruit appears in this list
+fruits = {'apple': 0, 'banana': 0, 'orange':0}
+fruit_list = ['apple', 'apple', 'banana', 'orange', 'apple', 'orange']
+
+for fruit in fruit_list: 
+    fruits[fruit] = fruits[fruit] + 1
+print(fruits)
+
+
+# Count occurrences of each color
+colors = ['red', 'blue', 'red', 'green', 'blue', 'blue']
+color_count = {'red': 0, 'blue': 0, 'green': 0}
+
+for color in colors: 
+    color_count[color] = color_count[color] + 1
+print(color_count)
+
+# Count how many times each animal appears
+animals = ['dog', 'cat', 'dog', 'bird', 'cat', 'dog']
+
+# Start with empty count
+animal_count = {}
+
+for animal in animals: 
+    # If we've seen this animal before
+    if animal in animal_count: 
+        animal_count[animal] = animal_count[animal] + 1 
+    # If it's a new animal
+    else:
+        animal_count[animal] = 1
+print(animal_count)
+
+# Count days of the week:
+days = ['Monday', 'Tuesday', 'Monday', 'Wednesday', 'Monday', 'Thursday', 'Friday']
+day_count = {}
+
+for day in days: 
+    if day in day_count: 
+        day_count[day] = day_count[day] + 1
+    else: 
+        day_count[day] = 1 
+print(day_count)
+
+# Count types of fruits:
+fruit_basket = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
+
+fruit_count = {}
+
+for fruit in fruit_basket: 
+    if fruit in fruit_count: 
+        fruit_count[fruit] = fruit_count[fruit] + 1
+    else: 
+        fruit_count[fruit] = 1
+print(fruit_count)
+
