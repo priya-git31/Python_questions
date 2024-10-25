@@ -32,10 +32,8 @@ print(student_count)
 # 5. Write a function that prints all students whose names start with a specific letter.
 
 
-
 # 6. Write a function to remove a student from the dictionary using their name (key).
-# del student_count['Alice']
-# print(student_count)
+ #del student_count['Alice']
 
 # 7. Write a function to find all students with names of a given length.
 
@@ -48,8 +46,20 @@ print(student_count)
 
 
 # 10. Write a function to return a sorted list of student names in alphabetical order.
+student_scores = {
+    'Blice': 85,
+    'Sob': 92,
+    'Charlie': 88,
+    'Aavid': 79,
+    'Eve': 91
+}
+
+students_names = student_scores.keys()
+students_sorted =sorted(students_names)
+print(students_sorted)
 
 # Starting dictionary
+
 student_scores = {
     'Alice': 85,
     'Bob': 92,
