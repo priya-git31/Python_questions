@@ -7,7 +7,6 @@ student_scores = {
     'Eve': 91
 }
 
-
 # 1. Write a function to print all student names (keys) using a for loop.
 for student in student_scores:
     all_keys = student_scores.keys()
@@ -17,31 +16,26 @@ for student in student_scores:
 print(student_scores.keys())
 
 # 3. Write a function to check if a specific student (key) is present in the dictionary.
-
+alice_exists = 'Alice' in student_scores
+print(alice_exists)
 
 # 4. Write a function to count the number of students in the dictionary.
-student_scores = {
-    'Alice': 85,
-    'Bob': 92,
-    'Charlie': 88,
-    'David': 79,
-    'Eve': 91
-}
-
-student_count = 1 
+student_count = {}
 
 for student in student_scores: 
     if student in student_count:
-        student_count = student_count[student] + 1 
+        student_count[student] = student_count[student] + 1 
     else: 
-        student_count = 1 
+        student_count[student] = 1 
 print(student_count)
 
 # 5. Write a function that prints all students whose names start with a specific letter.
 
 
-# 6. Write a function to remove a student from the dictionary using their name (key).
 
+# 6. Write a function to remove a student from the dictionary using their name (key).
+# del student_count['Alice']
+# print(student_count)
 
 # 7. Write a function to find all students with names of a given length.
 
