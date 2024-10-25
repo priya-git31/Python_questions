@@ -31,12 +31,10 @@ print(student_count)
 
 # 5. Write a function that prints all students whose names start with a specific letter.
 
-
 # 6. Write a function to remove a student from the dictionary using their name (key).
  #del student_count['Alice']
 
 # 7. Write a function to find all students with names of a given length.
-
 
 
 # 8. Write a function to check if all students’ names start with a capital letter.
@@ -69,15 +67,27 @@ student_scores = {
 }
 
 # 1. Write a function to print all student scores (values) using a for loop.
+# student_values = {}
+
+# for student in student_scores: 
+#     student_values = student_scores.values()
+# print(student_values)    #missed the logic here 
 
 
 # 2. Write a function that accepts a dictionary and returns a list of all student scores (values).
-
+# students_values = student_scores.values()
+# print(students_values)
 
 # 3. Write a function to check if a specific score (value) is present in the dictionary.
 
 
 # 4. Write a function to calculate the average score of all students in the dictionary.
+# average = 0 
+
+# for key,value in student_scores.items():
+#          average = sum(int(value))/len(value)
+# print(average)
+
 
 
 # 5. Write a function that prints the students who scored above a specific threshold.
