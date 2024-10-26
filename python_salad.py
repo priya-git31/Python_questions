@@ -75,8 +75,8 @@ student_scores = {
 
 
 # 2. Write a function that accepts a dictionary and returns a list of all student scores (values).
-# students_values = student_scores.values()
-# print(students_values)
+students_values = student_scores.values()
+print(students_values)
 
 # 3. Write a function to check if a specific score (value) is present in the dictionary.
 
@@ -109,3 +109,6 @@ student_scores = {
 
 
 print(student_scores.keys())
+
+students_values = student_scores.values()
+print(students_values)
