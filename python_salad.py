@@ -112,3 +112,7 @@ print(student_scores.keys())
 
 students_values = student_scores.values()
 print(students_values)
+
+
+students_values = student_scores.values()
+print(students_values)
