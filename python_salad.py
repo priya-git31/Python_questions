@@ -13,7 +13,7 @@ for student in student_scores:
     print(all_keys)
 
 # 2. Write a function that accepts a dictionary and returns a list of all student names (keys).
-print(student_scores.keys())
+# print(student_scores.keys())
 
 # 3. Write a function to check if a specific student (key) is present in the dictionary.
 alice_exists = 'Alice' in student_scores
@@ -106,3 +106,6 @@ student_scores = {
 
 
 # 10. Write a function to find the sum of all scores in the dictionary.
+
+
+print(student_scores.keys())
