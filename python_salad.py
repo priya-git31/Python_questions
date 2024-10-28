@@ -48,7 +48,7 @@ student_scores = {
     'Blice': 85,
     'Sob': 92,
     'Charlie': 88,
-    'Aavid': 79,
+    'Aavid': 99,
     'Eve': 91
 }
 
@@ -114,5 +114,5 @@ students_values = student_scores.values()
 print(students_values)
 
 
-students_values = student_scores.values()
-print(students_values)
+# students_values = student_scores.values()
+# print(students_values)
