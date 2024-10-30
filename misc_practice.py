@@ -96,3 +96,25 @@ def minimum(dictionary_name):
 
 min_book_name = minimum(combined_dict_result)
 print(min_book_name)
+
+# Question 12: How can you filter out books with pages greater than 250?
+
+# def filter_books(page_number,dictionary_name): 
+#     filtered_books = { books : pages
+#                       for books,pages in combined_dict_result.items()
+#                       if pages > page_number}
+#     return filtered_books
+
+# result = filter_books(250, combined_dict_result)
+# print(result)
+
+
+def filter_books(page_number,dictionary_name): 
+    filtered_books = {}
+    for books,pages in dictionary_name.items(): 
+        if pages > page_number: 
+            filtered_books[books] = pages 
+            return filtered_books 
+
+result = filter_books(250, combined_dict_result)
+print(result)

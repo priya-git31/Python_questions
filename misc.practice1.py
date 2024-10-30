@@ -91,3 +91,26 @@ def minimum_f_r(dictionary_name):
 
 minimum_rating_fl = minimum_f_r(dict_flavors_ratings)
 print(minimum_rating_fl)
+
+# Question 12: How can you filter out flavours with ratings greater than 8?
+
+#using comprehension
+def filter_flavours(rating_number, dictionary_name): 
+    filtered_flavours = {flavour : rating 
+                         for flavour,rating in dictionary_name.items()
+                         if rating > rating_number}
+    return filtered_flavours
+
+filtered_flav_result = filter_flavours(8, dict_flavors_ratings)
+print(filtered_flav_result)
+
+#using loops 
+def filter_flavours(rating_number, dictionary_name): 
+    filtered_flavs = {}
+    for flavour,rating in dictionary_name.items(): 
+        if rating > rating_number: 
+            filtered_flavs[flavour] = rating 
+    return filtered_flavs
+
+result = filter_flavours(7, dict_flavors_ratings)
+print(result)

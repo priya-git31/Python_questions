@@ -79,10 +79,22 @@ print(sort_by_scores)
 
 
 # Question 11: What code would you write to find the minimum score and the corresponding name?
+
+
 # Question 12: How can you filter out names with scores greater than 90?
+
+
 # Question 13: Can you create a new list that contains the length of each name?
+def length_name(dictionary_name): 
+    return [len(name) for name in dictionary_name.keys()]
+    
+length_name = length_name(names_scores_dict)
+print(length_name)
+
 # Question 14: How would you check if the name 'David' is in the `names_scores_dict`?
 # Question 15: How can you update 'Alice's' score to 90 in the `names_scores_dict`?
+
+
 # Question 16: What would you do to remove 'Charlie' and their score from the dictionary?
 # Question 17: Can you find the number of unique scores in the `scores` list?
 # Question 18: How would you merge two dictionaries if you had another dictionary with additional names and scores?
