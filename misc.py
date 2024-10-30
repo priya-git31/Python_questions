@@ -125,9 +125,15 @@ result = is_name_present(names_scores_dict,'David')
 print(result)
 
 # Question 15: How can you update 'Alice's' score to 90 in the `names_scores_dict`?
+def updates(dictionary_name, new_score, up_name): 
+    updated_name = dictionary_name[up_name] = new_score
+    return updated_name
 
+result = updates(names_scores_dict,90,'Alice')
+print(result)
 
 # Question 16: What would you do to remove 'Charlie' and their score from the dictionary?
+
 # Question 17: Can you find the number of unique scores in the `scores` list?
 # Question 18: How would you merge two dictionaries if you had another dictionary with additional names and scores?
 # Question 19: How would you calculate the average length of names in the `names` list?
