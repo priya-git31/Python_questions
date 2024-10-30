@@ -81,3 +81,13 @@ def sorting_desc(dictionary_name):
 
 sorting_by_score = sorting_desc(dict_flavors_ratings)
 print(sorting_by_score)
+
+# Question 11: What code would you write to find the minimum rating and the corresponding flavour name?
+
+def minimum_f_r(dictionary_name): 
+    minimum_fl = min(dictionary_name, key=dictionary_name.get)
+    minimum_rg = dictionary_name[minimum_fl]
+    return minimum_rg, minimum_fl
+
+minimum_rating_fl = minimum_f_r(dict_flavors_ratings)
+print(minimum_rating_fl)

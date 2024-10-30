@@ -87,15 +87,12 @@ def sorting_by_values(dictionary_name):
 sorted_by_scores = sorting_by_values(combined_dict_result)
 print(sorted_by_scores)
 
-#10 Sort toys by price (highest to lowest)
-def sort_by_price(toy_dictionary):
-    # sorted() with lambda function tells Python to look at the prices
-    # reverse=True means highest to lowest
-    return sorted(toy_dictionary.items(), 
-                 key=lambda x: x[1],  # x[1] means look at the price
-                 reverse=True)        # reverse=True means highest first
+# Question 11: What code would you write to find the minimum pages and the corresponding book name?
 
-expensive_to_cheap = sort_by_price(toy_dictionary)
-print("\nToys from most to least expensive:")
-for toy, price in expensive_to_cheap:
-    print(f"{toy}: ${price}")
+def minimum(dictionary_name):
+    minimum_book_name = min(dictionary_name, key=dictionary_name.get)
+    minimum_pages = dictionary_name[minimum_book_name]
+    return  minimum_pages, minimum_book_name
+
+min_book_name = minimum(combined_dict_result)
+print(min_book_name)
