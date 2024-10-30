@@ -52,10 +52,30 @@ sum_of_scores = sum_of_values(names_scores_dict)
 print(sum_of_scores)    
 
 # Question 8: How would you find the average score from the `scores` list?
+def average_scores_list(list_name): 
+    sum_list = sum(list_name)
+    len_list = len(list_name)
+    avg_list = sum_list/len_list
+    return avg_list 
+
+avg_scores_result = average_scores_list(scores)
+print(avg_scores_result)
+
 # Question 9: How can you sort the names alphabetically?
+def sort_names(list_name):
+    sorted_names = sorted(names)
+    return sorted_names
+
+names_sort = sort_names(names)
+print(names_sort)
+
 # Question 10: How would you sort the `names_scores_dict` by scores in descending order?
+def sort_by_values(dictionary_name): 
+    sort_result = sorted(dictionary_name.items(), key=lambda x: x[1], reverse=True)
+    return sort_result 
 
-
+sort_by_scores = sort_by_values(names_scores_dict)
+print(sort_by_scores)
 
 
 # Question 11: What code would you write to find the minimum score and the corresponding name?

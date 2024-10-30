@@ -90,3 +90,17 @@ def sort_toy_names(toy_dictionary):
 sorted_toys = sort_toy_names(toy_store)
 print("\nToys in alphabetical order:")
 print(sorted_toys)
+
+
+#10 Sort toys by price (highest to lowest)
+def sort_by_price(toy_dictionary):
+    # sorted() with lambda function tells Python to look at the prices
+    # reverse=True means highest to lowest
+    return sorted(toy_dictionary.items(), 
+                 key=lambda x: x[1],  # x[1] means look at the price
+                 reverse=True)        # reverse=True means highest first
+
+expensive_to_cheap = sort_by_price(toy_store)
+print("\nToys from most to least expensive:")
+for toy, price in expensive_to_cheap:
+    print(f"{toy}: ${price}")
