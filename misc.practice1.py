@@ -114,3 +114,19 @@ def filter_flavours(rating_number, dictionary_name):
 
 result = filter_flavours(7, dict_flavors_ratings)
 print(result)
+
+# Question 13: Can you create a new list that contains the length of each flavour?
+def length_list(dictionary_name): 
+    return [len(name) for name in dictionary_name.keys()]
+
+result = length_list(dict_flavors_ratings)
+print(result)
+
+# Question 14: How would you check if the flavour 'chocolate' is in the `dict_flavours_ratings`?
+
+def is_flav_present(dictionary_name, certain_flav): 
+    is_present = certain_flav in dictionary_name
+    return is_present
+
+result = is_flav_present(dict_flavors_ratings, 'chocolate')
+print(result)

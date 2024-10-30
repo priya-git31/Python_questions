@@ -104,3 +104,20 @@ expensive_to_cheap = sort_by_price(toy_store)
 print("\nToys from most to least expensive:")
 for toy, price in expensive_to_cheap:
     print(f"{toy}: ${price}")
+
+
+#12.
+
+# Using list comprehension
+expensive_toys = {toy: price for toy, price in toy_store.items() 
+                 if price > 10}
+print("\nExpensive toys (comprehension):")
+print(expensive_toys)
+
+# Using loop
+def find_expensive_toys(toy_dict, price_limit):
+    expensive = {}
+    for toy, price in toy_dict.items():
+        if price > price_limit:
+            expensive[toy] = price
+    return expensive

@@ -79,19 +79,51 @@ print(sort_by_scores)
 
 
 # Question 11: What code would you write to find the minimum score and the corresponding name?
+def filter_scores(dictionary_name): 
+    filter_name = min(dictionary_name, key=dictionary_name.get)
+    filter_score = dictionary_name[filter_name]
+    return filter_score, filter_name
 
+result = filter_scores(names_scores_dict)
+print(result)
 
 # Question 12: How can you filter out names with scores greater than 90?
+#coprehension
+def filter_scores(dictionary_name, set_score): 
+    filtered_scores = {names: scores
+                      for names, scores in dictionary_name.items()
+                      if scores > set_score}
+    return filtered_scores
 
+result = filter_scores(names_scores_dict,90)
+print(result)
+
+#lists 
+def filter_scores(dictionary_name, set_score): 
+    filtered_scores = {}
+    for name, score in dictionary_name.items(): 
+        if score > set_score:
+            filtered_scores[name] = score
+    return filtered_scores
+
+result = filter_scores(names_scores_dict, 90)
+print(result)
 
 # Question 13: Can you create a new list that contains the length of each name?
-def length_name(dictionary_name): 
+def length_new(dictionary_name): 
     return [len(name) for name in dictionary_name.keys()]
-    
-length_name = length_name(names_scores_dict)
-print(length_name)
+
+result = length_new(names_scores_dict)
+print(result)
 
 # Question 14: How would you check if the name 'David' is in the `names_scores_dict`?
+def is_name_present(names_scores_dict, certain_name): 
+    is_present = certain_name in names_scores_dict
+    return is_present
+
+result = is_name_present(names_scores_dict,'David')
+print(result)
+
 # Question 15: How can you update 'Alice's' score to 90 in the `names_scores_dict`?
 
 
