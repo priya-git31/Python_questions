@@ -62,3 +62,22 @@ def average_ratings(list_name):
 
 average_ratings_result = average_ratings(ratings)
 print(average_ratings_result)
+
+# Question 9: How can you sort the flavours alphabetically?
+def sorting_list(list_name): 
+    sorted_list = sorted(list_name)
+    return sorted_list
+
+sorted_flavours = sorting_list(flavors)
+print(sorted_flavours)
+
+# Question 10: How would you sort the `names_scores_dict` by scores in descending order?
+
+def sorting_desc(dictionary_name): 
+    sorting_desc_result = sorted(dictionary_name.items(),
+                                 key=lambda x: x[1],
+                                 reverse=True)
+    return sorting_desc_result
+
+sorting_by_score = sorting_desc(dict_flavors_ratings)
+print(sorting_by_score)

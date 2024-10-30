@@ -70,3 +70,19 @@ def average_result(list_name):
 
 average_pages = average_result(pages)
 print(average_pages)
+
+# Question 9: How can you sort the books alphabetically?
+def sorting_list(list_name): 
+    sorted_list = sorted(list_name)
+    return sorted_list 
+
+sorted_books = sorting_list(books)
+print(sorted_books)
+
+# Question 10: How would you sort the `combined_dict_result` by scores in descending order?
+def sorting_by_values(dictionary_name): 
+    sorted_result = sorted(dictionary_name.items(), key=lambda x: x[1], reverse=True)
+    return sorted_result
+
+sorted_by_scores = sorting_by_values(combined_dict_result)
+print(sorted_by_scores)

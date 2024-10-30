@@ -71,3 +71,22 @@ def get_total_price(toy_dictionary):
 total_toy_cost = get_total_price(toy_store)
 print(f"\nTotal of all toy prices: ${total_toy_cost}")
 
+#8 Finding Averages:
+# Average toy price
+def get_average_price(toy_dictionary):
+    total = sum(toy_dictionary.values())  # Add up all prices
+    count = len(toy_dictionary)           # Count how many toys
+    return total / count                  # Divide total by count
+
+avg_toy_price = get_average_price(toy_store)
+print(f"\nAverage toy price: ${avg_toy_price}")
+
+#9. Sorting Names Alphabetically:
+# Sort toy names
+def sort_toy_names(toy_dictionary):
+    # Get the names and sort them
+    return sorted(toy_dictionary.keys())
+
+sorted_toys = sort_toy_names(toy_store)
+print("\nToys in alphabetical order:")
+print(sorted_toys)
