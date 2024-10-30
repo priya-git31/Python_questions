@@ -29,12 +29,17 @@ print(scores_frequency)
 def access_scores(names,names_scores_dict):
     return names_scores_dict[names]
 
-Charlie_score = access_scores("Charlie, names_scores_dict")
+Charlie_score = access_scores("Charlie", names_scores_dict)
 print(Charlie_score)
  
 
 # Question 5: Can you find the name with the highest score?
+def highest_score(names_scores_dict):
+    highest_score_return = max(names_scores_dict, key=names_scores_dict.get)
+    return highest_score_return 
 
+name_highest_score = highest_score(names_scores_dict)
+print(name_highest_score)
 
 # Question 6: How would you create a list of only the names?
 # Question 7: How would you find the total sum of all scores?
