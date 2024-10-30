@@ -52,3 +52,21 @@ def most_expensive_book(sample_dictionary):
 
 most_exp_book_result = most_expensive_book(combined_dict_result)
 print(most_exp_book_result)
+
+#7 sum up all the pages count 
+def sum_of_all(dictionary_name):
+    sum_eveyrthing = sum(dictionary_name.values())
+    return sum_eveyrthing
+
+sum_of_pages = sum_of_all(combined_dict_result)
+print(sum_of_pages)
+
+# Question 8: How would you find the average pages from the pages list?
+def average_result(list_name):
+    sum_list = sum(list_name)
+    length_list = len(list_name)
+    average_return = sum_list/length_list
+    return average_return
+
+average_pages = average_result(pages)
+print(average_pages)

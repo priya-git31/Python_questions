@@ -61,3 +61,13 @@ def find_most_expensive_toy(toy_dictionary):
 # Let's find out!
 expensive_toy = find_most_expensive_toy(toy_store)
 print(f"\nMost expensive toy is: {expensive_toy} at ${toy_store[expensive_toy]}")
+
+#7 Finding Total Sum:
+# Let's sum up all toy prices
+def get_total_price(toy_dictionary):
+    # sum() adds up all the values in the dictionary
+    return sum(toy_dictionary.values())
+
+total_toy_cost = get_total_price(toy_store)
+print(f"\nTotal of all toy prices: ${total_toy_cost}")
+

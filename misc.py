@@ -42,10 +42,22 @@ name_highest_score = highest_score(names_scores_dict)
 print(name_highest_score)
 
 # Question 6: How would you create a list of only the names?
+
 # Question 7: How would you find the total sum of all scores?
+def sum_of_values(dictionary_name):
+    summed_result = sum(dictionary_name.values())
+    return summed_result 
+
+sum_of_scores = sum_of_values(names_scores_dict)
+print(sum_of_scores)    
+
 # Question 8: How would you find the average score from the `scores` list?
 # Question 9: How can you sort the names alphabetically?
 # Question 10: How would you sort the `names_scores_dict` by scores in descending order?
+
+
+
+
 # Question 11: What code would you write to find the minimum score and the corresponding name?
 # Question 12: How can you filter out names with scores greater than 90?
 # Question 13: Can you create a new list that contains the length of each name?

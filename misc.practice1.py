@@ -45,3 +45,20 @@ print(highest_rated_flavor)
 # Use square brackets [] to look up things in a dictionary
 # max() with key=dictionary.get finds the item with the highest value
 
+#7 Finding Total Sum of all the ratings:
+def sum_of_all(dictionary_name):
+    sum_result = sum(dictionary_name.values())
+    return sum_result 
+
+sum_of_ratings = sum_of_all(dict_flavors_ratings)
+print(sum_of_ratings)
+
+# Question 8: How would you find the average ratings from the ratings list?
+def average_ratings(list_name):
+    sum_ratings = sum(list_name)
+    length_ratings = len(list_name)
+    return_ratings = sum_ratings/length_ratings
+    return return_ratings
+
+average_ratings_result = average_ratings(ratings)
+print(average_ratings_result)
