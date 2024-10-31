@@ -194,3 +194,10 @@ def seperate_list(dictionary_name):
 result = seperate_list(combined_dict_result)
 print(result)
 
+# Question 23: Can you create a set from the `books` list to remove duplicates if there were any?
+def set_list(list_name): 
+    result = set(list_name)
+    return result 
+
+result = set_list(books)
+print(result)

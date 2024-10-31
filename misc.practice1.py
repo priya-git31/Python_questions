@@ -186,3 +186,12 @@ def sep_list(dictionary_name):
 
 result = sep_list(dict_flavors_ratings)
 print(result)
+
+# Question 23: Can you create a set from the `flavors` list to remove duplicates if there were any?
+
+def set_list(list_name): 
+    result = set(list_name)
+    return result 
+
+result = set_list(flavors)
+print(result)

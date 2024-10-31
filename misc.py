@@ -190,5 +190,20 @@ result = scores_list(names_scores_dict)
 print(result)
 
 # Question 22: How would you find the median score if the `scores` list was unsorted?
-# Question 23: Can you create a set from the `names` list to remove duplicates if there were any?
+def median_score(list_name):
+    sort_list = sorted(list_name)
+    length_list = len(sort_list)
+    median_score_list = length_list/2
+    return median_score_list 
 
+result = median_score(scores)
+print(result)
+
+
+# Question 23: Can you create a set from the `names` list to remove duplicates if there were any?
+def set_names(list_name): 
+    result = set(list_name)
+    return result 
+
+result = set_names(names)
+print(result)
