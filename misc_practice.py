@@ -185,3 +185,12 @@ def reverse_list(list_name):
 result = reverse_list(books)
 print(result)
 print(books)
+
+# Question 21: How can you extract all the pages from the dictionary into a separate list?
+def seperate_list(dictionary_name): 
+    new_list = list(dictionary_name.values())
+    return new_list 
+
+result = seperate_list(combined_dict_result)
+print(result)
+

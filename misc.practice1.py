@@ -177,3 +177,12 @@ def reverse_list(list_name):
 result = reverse_list(flavors)
 print(result)
 print(combined_flavors_ratings)
+
+# Question 21: How can you extract all the ratings from the dictionary into a separate list?
+
+def sep_list(dictionary_name): 
+    sep_return = list(dictionary_name.values())
+    return sep_return 
+
+result = sep_list(dict_flavors_ratings)
+print(result)

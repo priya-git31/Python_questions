@@ -182,7 +182,12 @@ print(names)
 
 # Question 21: How can you extract all the scores from the dictionary into a separate list?
 
+def scores_list(dictionary_name): 
+    sep_list = list(dictionary_name.values())
+    return sep_list 
 
+result = scores_list(names_scores_dict)
+print(result)
 
 # Question 22: How would you find the median score if the `scores` list was unsorted?
 # Question 23: Can you create a set from the `names` list to remove duplicates if there were any?
