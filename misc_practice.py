@@ -3,7 +3,7 @@
 # 2. Their page counts
 
 books = ["Harry Potter", "Percy Jackson", "Matilda"]
-pages = [300, 250, 200,300]
+pages = [300, 250, 200,]
 
 #1 Combine them into pairs
 # Imagine you're matching each book with its pages count
@@ -162,3 +162,26 @@ def unique_pages(list_name):
 
 result = unique_pages(pages)
 print(result)
+
+# Question 18: How would you merge two dictionaries if you had another dictionary with additional books and pages?
+
+temp_dict = {"Pride and Prejudice" : 400, "Dracula" : 700}
+
+def adding_dict(original_dict,new_dict): 
+    combined = original_dict.copy()
+    combined.update(new_dict)
+    return combined 
+
+result = adding_dict(combined_dict_result, temp_dict)
+print(result)
+
+
+# Question 20: Can you reverse the order of the `books` list?
+
+def reverse_list(list_name): 
+    result = list_name.reverse()
+    return result 
+
+result = reverse_list(books)
+print(result)
+print(books)

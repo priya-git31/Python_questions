@@ -151,8 +151,35 @@ result = unique_scores(scores)
 print(result)
 
 # Question 18: How would you merge two dictionaries if you had another dictionary with additional names and scores?
+temp_dict = {"Allsion" : 100, "Carl" : 23}
+
+def merge_dict(old_dict,new_dict): 
+    combined = old_dict.copy()
+    combined.update(new_dict)
+    return combined 
+
+result = merge_dict(names_scores_dict,temp_dict)
+print(result)
+
 # Question 19: How would you calculate the average length of names in the `names` list?
+# def avg_name_length(dictionary_name): 
+#     names = list(dictionary_name.keys())
+#     for name in names: 
+#         return len(names)
+    
+# result = avg_name_length(names_scores_dict)
+# print(result)
+
 # Question 20: Can you reverse the order of the `names` list?
+
+def reverse_list(my_list): 
+    result = my_list.reverse()
+    return(result)
+
+result = reverse_list(names)
+print(result)
+print(names)
+
 # Question 21: How can you extract all the scores from the dictionary into a separate list?
 
 

@@ -157,3 +157,23 @@ def unique_ratings(list_name):
 
 result = unique_ratings(ratings)
 print(result)
+
+# Question 18: How would you merge two dictionaries if you had another dictionary with additional books and pages?
+
+temp_dict = {"blueberry" : 15, "custard apple" : 23}
+
+def merge_dict(old_dict,new_dict): 
+    return old_dict | new_dict
+
+result = merge_dict(dict_flavors_ratings, temp_dict)
+print(result)
+
+# Question 20: Can you reverse the order of the `flavours` list?
+
+def reverse_list(list_name): 
+    result = list_name.reverse()
+    return result 
+
+result = reverse_list(flavors)
+print(result)
+print(combined_flavors_ratings)
