@@ -143,6 +143,7 @@ print(result)
 print(names_scores_dict)
 
 # Question 17: Can you find the number of unique scores in the `scores` list?
+
 # Question 18: How would you merge two dictionaries if you had another dictionary with additional names and scores?
 # Question 19: How would you calculate the average length of names in the `names` list?
 # Question 20: Can you reverse the order of the `names` list?

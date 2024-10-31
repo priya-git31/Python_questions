@@ -144,3 +144,12 @@ def updates(dictionary_name,update_name,update_num):
 result = updates(combined_dict_result,'Percy Jackson', 90)
 print(result)
 print(combined_dict_result)
+
+# Question 16: What would you do to remove 'Matilda' and their pages from the dictionary?
+# def remove_entries(dictionary_name,del_name): 
+#     result = dictionary_name.pop(del_name)
+#     return result 
+
+# result = remove_entries(combined_dict_result,'Matilda')
+# print(result)
+# print(combined_dict_result)
