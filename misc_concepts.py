@@ -123,3 +123,48 @@ def find_expensive_toys(toy_dict, price_limit):
     return expensive
 
 # Question 13: Can you create a new list that contains the length of each toy?
+# Get length of each toy name
+def get_name_lengths(toy_dictionary):
+    # List comprehension to get lengths
+    return [len(name) for name in toy_dictionary.keys()]
+
+toy_name_lengths = get_name_lengths(toy_store)
+print("\nLength of each toy name:")
+for toy, length in zip(toy_store.keys(), toy_name_lengths):
+    print(f"{toy}: {length} letters")
+
+#14. Checking if Something Exists in Dictionary:
+def check_toy_exists(toy_name, toy_dictionary):
+    return toy_name in toy_dictionary
+
+# Let's check for "car" and "airplane"
+print("\nChecking inventory:")
+print(f"Do we have a car? {check_toy_exists('car', toy_store)}")
+print(f"Do we have an airplane? {check_toy_exists('airplane', toy_store)}")
+
+#15. Updating Values in Dictionary:
+# Update toy price
+def update_toy_price(toy_name, new_price, toy_dictionary):
+    if toy_name in toy_dictionary:
+        toy_dictionary[toy_name] = new_price
+        print(f"Updated {toy_name} price to ${new_price}")
+    else:
+        print(f"Sorry, {toy_name} not found in store!")
+    return toy_dictionary
+
+# 16.Finding Unique Values:
+
+# Our toy store with some repeated prices
+toy_store = {
+    "teddy bear": 10,
+    "car": 15,
+    "doll": 10,    # Same price as teddy bear
+    "robot": 20,
+    "blocks": 15   # Same price as car
+}
+
+# Method 1: Using set()
+def get_unique_prices(toy_dictionary):
+    # set() only keeps unique values
+    unique_prices = set(toy_dictionary.values())
+    return list(unique_prices)

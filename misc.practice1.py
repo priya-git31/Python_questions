@@ -142,10 +142,18 @@ print(dict_flavors_ratings)
 
 # Question 16: What would you do to remove 'mint' and it's rating from the dictionary?
 
-def del_entry(dictionary_name, del_name): 
-    result = dictionary_name.pop(del_name)
-    return result 
+# def del_entry(dictionary_name, del_name): 
+#     result = dictionary_name.pop(del_name)
+#     return result 
 
-result = del_entry(dict_flavors_ratings,'mint')
+# result = del_entry(dict_flavors_ratings,'mint')
+# print(result)
+# print(dict_flavors_ratings)
+
+# Question 17: Can you find the number of ratings in the `ratings` list?
+def unique_ratings(list_name): 
+    result = set(list_name)
+    return result
+
+result = unique_ratings(ratings)
 print(result)
-print(dict_flavors_ratings)

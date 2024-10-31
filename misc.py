@@ -143,11 +143,20 @@ print(result)
 print(names_scores_dict)
 
 # Question 17: Can you find the number of unique scores in the `scores` list?
+def unique_scores(list_name): 
+    result = set(list_name)
+    return result 
+
+result = unique_scores(scores)
+print(result)
 
 # Question 18: How would you merge two dictionaries if you had another dictionary with additional names and scores?
 # Question 19: How would you calculate the average length of names in the `names` list?
 # Question 20: Can you reverse the order of the `names` list?
 # Question 21: How can you extract all the scores from the dictionary into a separate list?
+
+
+
 # Question 22: How would you find the median score if the `scores` list was unsorted?
 # Question 23: Can you create a set from the `names` list to remove duplicates if there were any?
 

@@ -3,7 +3,7 @@
 # 2. Their page counts
 
 books = ["Harry Potter", "Percy Jackson", "Matilda"]
-pages = [300, 250, 200]
+pages = [300, 250, 200,300]
 
 #1 Combine them into pairs
 # Imagine you're matching each book with its pages count
@@ -153,3 +153,12 @@ print(combined_dict_result)
 # result = remove_entries(combined_dict_result,'Matilda')
 # print(result)
 # print(combined_dict_result)
+
+# Question 17: Can you find the number of unique pages in the `pages` list?
+
+def unique_pages(list_name): 
+    result = set(list_name)
+    return result 
+
+result = unique_pages(pages)
+print(result)
