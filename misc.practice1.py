@@ -130,3 +130,12 @@ def is_flav_present(dictionary_name, certain_flav):
 
 result = is_flav_present(dict_flavors_ratings, 'chocolate')
 print(result)
+
+# Question 15: How can you update 'chocolate's rating to 90 in the `dict_flavors_ratings`?
+def updated_entry(dictionary_name,updated_number,chocolate): 
+    result = dictionary_name[chocolate] = updated_number
+    return result
+
+result = updated_entry(dict_flavors_ratings,90,'chocolate')
+print(result)
+print(dict_flavors_ratings)

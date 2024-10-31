@@ -134,3 +134,13 @@ def is_book_present(dictionary_name, certain_book):
 
 result = is_book_present(combined_dict_result, 'Matilda')
 print(result)
+
+# Question 15: How can you update 'Percy Jackson's pages to 90 in the `combined_dict_result`?
+
+def updates(dictionary_name,update_name,update_num): 
+    result = dictionary_name[update_name] = update_num 
+    return result 
+
+result = updates(combined_dict_result,'Percy Jackson', 90)
+print(result)
+print(combined_dict_result)

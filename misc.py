@@ -134,6 +134,14 @@ print(result)
 
 # Question 16: What would you do to remove 'Charlie' and their score from the dictionary?
 
+def remove_entry(dictionary_name,certain_name): 
+    del_entry = dictionary_name.pop(certain_name)
+    return del_entry 
+
+result = remove_entry(names_scores_dict,'Charlie')
+print(result)
+print(names_scores_dict)
+
 # Question 17: Can you find the number of unique scores in the `scores` list?
 # Question 18: How would you merge two dictionaries if you had another dictionary with additional names and scores?
 # Question 19: How would you calculate the average length of names in the `names` list?

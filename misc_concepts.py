@@ -121,3 +121,5 @@ def find_expensive_toys(toy_dict, price_limit):
         if price > price_limit:
             expensive[toy] = price
     return expensive
+
+# Question 13: Can you create a new list that contains the length of each toy?
