@@ -152,7 +152,7 @@ def update_toy_price(toy_name, new_price, toy_dictionary):
         print(f"Sorry, {toy_name} not found in store!")
     return toy_dictionary
 
-# 16.Finding Unique Values:
+# 17.Finding Unique Values:
 
 # Our toy store with some repeated prices
 toy_store = {
