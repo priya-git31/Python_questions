@@ -164,7 +164,27 @@ result = update_dict(users,"Alice", 'date')
 print(result)
 
 # Question 16: What code would you write to find the minimum and maximum numbers in `unique_numbers`?
+unique_numbers = {1, 2, 3, 4, 4, 5, 6}
+
+def max_min(set_name): 
+    max_num = max(set_name)
+    min_num = min(set_name)
+    return max_num, min_num
+
+result = max_min(unique_numbers)
+print(result)
+
 # Question 17: Write a line to remove duplicates from the `fruits` list using a set and convert it back to a list.
+fruits = ["apple", "banana", "cherry", "apple", "banana", "date"]
+
+def remove_duplicates(list_name): 
+    convert_to_set = set(list_name)
+    convert_to_list = list(convert_to_set)
+    return convert_to_list
+
+result = remove_duplicates(fruits)
+print(result)
+
 # Question 18: How can you merge `users` and another dictionary `{"David": ["milk", "banana"]}` into one dictionary?
 # Question 19: How would you find the total quantity of "apple" from `inventory` and "Alice's" list?
 # Question 20: Can you write a lambda function to multiply each number in a list by 2 and apply it to `[1, 2, 3, 4]`?
