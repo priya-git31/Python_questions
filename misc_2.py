@@ -79,27 +79,35 @@ result = fruit_price('apple', 3)
 print(result)
 
 # Question 8: Can you find the intersection between `unique_numbers` and `{4, 5, 6, 7}`?
-# unique_numbers = {1, 2, 3, 4, 4, 5, 6}
-# tem_numbers = {4,5,6,7}
+unique_numbers = {1, 2, 3, 4, 4, 5, 6}
+tem_numbers = {4,5,6,7}
 
-# def intersection_two(unique_numbers,tem_numbers): 
-#     result = unique_numbers.intersection(tem_numbers)
-#     return result
+def intersection_two(unique_numbers,tem_numbers): 
+    result = unique_numbers.intersection(tem_numbers)
+    return result
 
-# result = intersection_two(unique_numbers,tem_numbers)
-# print(result)
+result = intersection_two(unique_numbers,tem_numbers)
+print(result)
 
 # Question 9: How would you split the `string_data` into words?
+string_data = "Welcome to Python learning session!"
+
+def split_data(string_name): 
+    result = string_name.split()
+    return result
+
+result = split_data(string_data)
+print(result)
 
 # Question 10: How can you check if "egg" is in the `grocery_list`?
-# grocery_list = ["apple", "egg", "milk", "banana", "orange", "egg", "banana"]
+grocery_list = ["apple", "egg", "milk", "banana", "orange", "egg", "banana"]
 
-# def check_item(list_name,item_name): 
-#     result = item_name in list_name
-#     return result 
+def check_item(list_name,item_name): 
+    result = item_name in list_name
+    return result 
 
-# result = check_item(grocery_list, "egg")
-# print(result)
+result = check_item(grocery_list, "egg")
+print(result)
 
 # Question 11: What is the total number of characters in `string_data` without counting spaces?
 
