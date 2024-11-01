@@ -68,7 +68,26 @@ result = unique_items(grocery_list)
 print(result)
 
 # Question 7: What will be the result of applying `fruit_total_price("apple", 3)`?
+# fruits = ["apple", "banana", "cherry", "apple", "banana", "date"]
+# prices = [1.2, 0.5, 2.5, 1.2, 0.5, 3.0]
+
+# def fruit_total_price(fruit_name, number): 
+    
+
+# result = fruit_total_price("apple", 3)
+# print(result)
+
 # Question 8: Can you find the intersection between `unique_numbers` and `{4, 5, 6, 7}`?
+unique_numbers = {1, 2, 3, 4, 4, 5, 6}
+tem_numbers = {4,5,6,7}
+
+def intersection_two(unique_numbers,tem_numbers): 
+    result = unique_numbers.intersection(tem_numbers)
+    return result
+
+result = intersection_two(unique_numbers,tem_numbers)
+print(result)
+
 # Question 9: How would you split the `string_data` into words?
 # Question 10: How can you check if "egg" is in the `grocery_list`?
 # Question 11: What is the total number of characters in `string_data` without counting spaces?
