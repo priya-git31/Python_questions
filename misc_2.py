@@ -43,8 +43,6 @@ result = most_frequent(fruits)
 print(result)
 
 # Question 4: How would you access the inventory count for "cherry" in the `inventory` dictionary?
-inventory = {"apple": 10, "banana": 5, "cherry": 7, "date": 3}
-
 def inventory_count(dictionary_name,item_name): 
     result = dictionary_name[item_name]
     return result 
@@ -52,9 +50,23 @@ def inventory_count(dictionary_name,item_name):
 result = inventory_count(inventory,"cherry")
 print(result)
 
-
 # Question 5: Write a line to add a new item "grape" with a count of 8 in the `inventory` dictionary.
+def new_item_add(dictionary_name, item_name, item_count): 
+    dictionary_name.update({item_name: item_count})
+    return dictionary_name
+
+result = new_item_add(inventory,"grape", 8)
+print(result)
+
+
 # Question 6: How would you create a list of unique items in the `grocery_list` using a set?
+def unique_items(list_name): 
+    result = set(list_name)
+    return result 
+
+result = unique_items(grocery_list)
+print(result)
+
 # Question 7: What will be the result of applying `fruit_total_price("apple", 3)`?
 # Question 8: Can you find the intersection between `unique_numbers` and `{4, 5, 6, 7}`?
 # Question 9: How would you split the `string_data` into words?
