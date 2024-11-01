@@ -186,5 +186,37 @@ result = remove_duplicates(fruits)
 print(result)
 
 # Question 18: How can you merge `users` and another dictionary `{"David": ["milk", "banana"]}` into one dictionary?
+another_dictionary =  {"David": ["milk", "banana"]}
+
+def combine_dictionaries(orginal_dict,dict_2): 
+    combined = orginal_dict | dict_2 
+    return combined
+
+result = combine_dictionaries(users,another_dictionary)
+print(result)
+
 # Question 19: How would you find the total quantity of "apple" from `inventory` and "Alice's" list?
+# inventory = {"apple": 10, "banana": 5, "cherry": 7, "date": 3}
+# users = {"Alice": ["apple", "banana"], "Bob": ["cherry", "date"], "Charlie": ["apple", "date"]}
+
+
+
+
 # Question 20: Can you write a lambda function to multiply each number in a list by 2 and apply it to `[1, 2, 3, 4]`?
+# new_list = [1, 2, 3, 4]
+
+# def lambda_function(list_name): 
+#     result = (lambda x : x * 2, list_name)
+#     return result 
+
+# result = lambda_function(new_list)
+# print(result)
+
+new_list = [1, 2, 3, 4]
+
+def lambda_function(list_name): 
+    result = list(map(lambda x : x * 2, list_name))
+    return result 
+
+result = lambda_function(new_list)
+print(result)
