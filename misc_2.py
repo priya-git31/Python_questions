@@ -110,8 +110,23 @@ result = check_item(grocery_list, "egg")
 print(result)
 
 # Question 11: What is the total number of characters in `string_data` without counting spaces?
+string_data = "Welcome to Python learning session!"
+
 
 # Question 12: Write a line to remove "banana" from the `grocery_list` using a list method.
+grocery_list = ["apple", "egg", "milk", "banana", "orange", "egg", "banana"]
+
+def remove_item(list_name,item_name):
+    while item_name in list_name: 
+        list_name.remove(item_name)
+    return list_name
+    
+result = remove_item(grocery_list,'banana')
+print(result)
+print(grocery_list)
+
+
+
 # Question 13: How would you reverse the order of items in the `grocery_list` list?
 # Question 14: How can you combine keys and values from `inventory` into a list of tuples?
 # Question 15: Write a line to update "Alice's" favorite fruits to include "date".
