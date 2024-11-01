@@ -68,29 +68,41 @@ result = unique_items(grocery_list)
 print(result)
 
 # Question 7: What will be the result of applying `fruit_total_price("apple", 3)`?
-# fruits = ["apple", "banana", "cherry", "apple", "banana", "date"]
-# prices = [1.2, 0.5, 2.5, 1.2, 0.5, 3.0]
+inventory = {"apple": 10, "banana": 5, "cherry": 7, "date": 3}
 
-# def fruit_total_price(fruit_name, number): 
-    
+def fruit_price(fruit_name,quantity): 
+    fruit_price_get = inventory[fruit_name]
+    total = fruit_price_get * 3 
+    return total 
 
-# result = fruit_total_price("apple", 3)
-# print(result)
-
-# Question 8: Can you find the intersection between `unique_numbers` and `{4, 5, 6, 7}`?
-unique_numbers = {1, 2, 3, 4, 4, 5, 6}
-tem_numbers = {4,5,6,7}
-
-def intersection_two(unique_numbers,tem_numbers): 
-    result = unique_numbers.intersection(tem_numbers)
-    return result
-
-result = intersection_two(unique_numbers,tem_numbers)
+result = fruit_price('apple', 3)
 print(result)
 
+# Question 8: Can you find the intersection between `unique_numbers` and `{4, 5, 6, 7}`?
+# unique_numbers = {1, 2, 3, 4, 4, 5, 6}
+# tem_numbers = {4,5,6,7}
+
+# def intersection_two(unique_numbers,tem_numbers): 
+#     result = unique_numbers.intersection(tem_numbers)
+#     return result
+
+# result = intersection_two(unique_numbers,tem_numbers)
+# print(result)
+
 # Question 9: How would you split the `string_data` into words?
+
 # Question 10: How can you check if "egg" is in the `grocery_list`?
+# grocery_list = ["apple", "egg", "milk", "banana", "orange", "egg", "banana"]
+
+# def check_item(list_name,item_name): 
+#     result = item_name in list_name
+#     return result 
+
+# result = check_item(grocery_list, "egg")
+# print(result)
+
 # Question 11: What is the total number of characters in `string_data` without counting spaces?
+
 # Question 12: Write a line to remove "banana" from the `grocery_list` using a list method.
 # Question 13: How would you reverse the order of items in the `grocery_list` list?
 # Question 14: How can you combine keys and values from `inventory` into a list of tuples?
