@@ -24,7 +24,6 @@ result = unique_set(fruits)
 print(result)
 
 # Question 2: Can you find the sum of all prices in the `prices` list?
-prices = [1.2, 0.5, 2.5, 1.2, 0.5, 3.0]
 
 def sum_prices(list_name): 
     result = sum(list_name)
@@ -44,6 +43,16 @@ result = most_frequent(fruits)
 print(result)
 
 # Question 4: How would you access the inventory count for "cherry" in the `inventory` dictionary?
+inventory = {"apple": 10, "banana": 5, "cherry": 7, "date": 3}
+
+def inventory_count(dictionary_name,item_name): 
+    result = dictionary_name[item_name]
+    return result 
+
+result = inventory_count(inventory,"cherry")
+print(result)
+
+
 # Question 5: Write a line to add a new item "grape" with a count of 8 in the `inventory` dictionary.
 # Question 6: How would you create a list of unique items in the `grocery_list` using a set?
 # Question 7: What will be the result of applying `fruit_total_price("apple", 3)`?
