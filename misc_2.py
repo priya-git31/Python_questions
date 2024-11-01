@@ -142,7 +142,27 @@ print(result)
 print(grocery_list)
 
 # Question 14: How can you combine keys and values from `inventory` into a list of tuples?
+inventory = {"apple": 10, "banana": 5, "cherry": 7, "date": 3}
+
+def combine_tuple(dictionary_name): 
+    dict_keys = dictionary_name.keys()
+    dict_values = dictionary_name.values()
+    combined_tuple = tuple(zip(dict_keys,dict_values))
+    return combined_tuple
+
+result = combine_tuple(inventory)
+print(result)
+
 # Question 15: Write a line to update "Alice's" favorite fruits to include "date".
+users = {"Alice": ["apple", "banana"], "Bob": ["cherry", "date"], "Charlie": ["apple", "date"]}
+
+def update_dict(dictionary_name, item_name, items): 
+    dictionary_name[item_name].append(items)
+    return dictionary_name
+
+result = update_dict(users,"Alice", 'date')
+print(result)
+
 # Question 16: What code would you write to find the minimum and maximum numbers in `unique_numbers`?
 # Question 17: Write a line to remove duplicates from the `fruits` list using a set and convert it back to a list.
 # Question 18: How can you merge `users` and another dictionary `{"David": ["milk", "banana"]}` into one dictionary?
