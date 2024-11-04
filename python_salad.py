@@ -15,7 +15,8 @@ print(result)
 #6 Use list comprehensions to find the square and cubes of numbers that are 
 # between 10 and 50 and also that are multiples of 3
 
+import math
 numbers = [ x for x in range(1,51) if x % 3 == 0]
 print(numbers)
-
-import math
+result = [(math.sqrt(x), pow(x,3)) for x in numbers]
+print(result)
