@@ -199,7 +199,14 @@ print(result)
 # inventory = {"apple": 10, "banana": 5, "cherry": 7, "date": 3}
 # users = {"Alice": ["apple", "banana"], "Bob": ["cherry", "date"], "Charlie": ["apple", "date"]}
 
+# def total_quantity(dict1,dict2,item): 
+#     dict_1_total = dict1[item]
+#     dict_2_total = dict2[item].count(item)
+#     total = dict_1_total + dict_2_total 
+#     return total 
 
+# result = total_quantity(inventory,users,"apple")
+# print(result)
 
 
 # Question 20: Can you write a lambda function to multiply each number in a list by 2 and apply it to `[1, 2, 3, 4]`?
@@ -219,4 +226,28 @@ def lambda_function(list_name):
     return result 
 
 result = lambda_function(new_list)
+print(result)
+
+
+users = {"Alice": ["apple", "banana"], "Bob": ["cherry", "date"], "Charlie": ["apple", "date"]}
+
+inventory = {"apple": 10, "banana": 5, "cherry": 7, "date": 3}
+
+fruits = ["apple", "banana", "cherry", "apple", "banana", "date"]
+
+for fruit in enumerate(fruits): 
+    print(fruit)
+
+unique_numbers = {1, 2, 3, 4, 4, 5, 6}
+fruits = ["apple", "banana", "cherry", "d", "e", "f"]
+
+result = fruits.remove(fruits[-2])
+print(result)
+print(fruits)
+
+
+import this 
+
+import math 
+result = math.log(25)
 print(result)

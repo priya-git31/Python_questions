@@ -195,3 +195,18 @@ def set_list(list_name):
 
 result = set_list(flavors)
 print(result)
+
+a = {"b" : 4, "c" : 7}
+# print(a)
+
+# def get_key(dict_name,number): 
+#     values = dict_name.values()
+#     if number in values: 
+#         return dict_name.key(number)
+    
+# result = get_key(a,4)
+# print(result)
+
+for i,j in a.items():
+    if j == 4: 
+        print(i)

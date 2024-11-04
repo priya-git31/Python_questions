@@ -201,3 +201,38 @@ def set_list(list_name):
 
 result = set_list(books)
 print(result)
+
+#SECTION II 
+
+
+movies = ["Inception", "Avatar", "Matrix", "Inception", "Avatar", "Titanic"]
+ratings = [8.8, 7.8, 8.7, 8.8, 7.8, 7.9]
+movie_details = {
+    "Inception": {"year": 2010, "genre": "sci-fi"},
+    "Avatar": {"year": 2009, "genre": "fantasy"},
+    "Matrix": {"year": 1999, "genre": "sci-fi"},
+    "Titanic": {"year": 1997, "genre": "drama"}
+}
+viewer_preferences = {
+    "John": ["sci-fi", "fantasy"],
+    "Emma": ["drama", "fantasy"],
+    "Mike": ["sci-fi", "drama"]
+}
+
+# Write a function that returns all unique genres from the movie_details dictionary.
+movie_details = {
+    "Inception": {"year": 2010, "genre": "sci-fi"},
+    "Avatar": {"year": 2009, "genre": "fantasy"},
+    "Matrix": {"year": 1999, "genre": "sci-fi"},
+    "Titanic": {"year": 1997, "genre": "drama"}
+}
+
+print(movie_details)
+
+def unique_genre(dict_name): 
+    result = set(dict_name.values())
+    return result 
+
+answer = unique_genre(movie_details)
+print(answer)
+
