@@ -1,24 +1,32 @@
-#1 apple is fruit - return this in such a way that it prints fruit is apple 
+# 1 apple is fruit - return this in such a way that it prints fruit is apple 
 
-#2 malayalam - check if this string is palindrome
-# def palindrome(given_word): 
-#     if given_word[::-1] == given_word:
-#         return ("It is Palindrome")
-#     else: 
-#         return ("It is not Palindrome")
+# word = "apple is fruit"
+# # result = fruit is apple
 
-# result = palindrome("malayalam")
-# print(result)
 
-# result2 = palindrome("Python")
-# print(result2)
 
-#3 numbers = 1234321 - check if the given number is palindrome
+# 2 malayalam - check if this string is palindrome
+def palindrome(given_word): 
+    if given_word[::-1] == given_word:
+        return ("It is a Palindrome")
+    else: 
+        return ("It is not a Palindrome")
+
+result = palindrome("malayalam")
+print(result)
+
+result2 = palindrome("Python")
+print(result2)
+
+
+
+
+# # 3 numbers = 1234321 - check if the given number is palindrome
 # def palindrome(given_numbers): 
 #    if given_numbers[::-1] == given_numbers:
-#      return ("It is Palindrome")
+#      return ("It is a Palindrome")
 #    else: 
-#      return ("It is not Palindrome")
+#      return ("It is not a Palindrome")
 
 # result = palindrome("1234321")
 # print(result)
