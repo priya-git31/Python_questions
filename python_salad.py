@@ -1,20 +1,32 @@
 #1 apple is fruit - return this in such a way that it prints fruit is apple 
 
 #2 malayalam - check if this string is palindrome
+# def palindrome(given_word): 
+#     if given_word[::-1] == given_word:
+#         return ("It is Palindrome")
+#     else: 
+#         return ("It is not Palindrome")
 
-def palindrome(given_word): 
-    if given_word[::-1] == given_word:
-        return ("It is Palindrome")
-    else: 
-        return ("It is not Palindrome")
+# result = palindrome("malayalam")
+# print(result)
 
-result = palindrome("malayalam")
-print(result)
+# result2 = palindrome("Python")
+# print(result2)
 
-result2 = palindrome("Python")
-print(result2)
+#3 numbers = 1234321 - check if the given number is palindrome
+# def palindrome(given_numbers): 
+#    if given_numbers[::-1] == given_numbers:
+#      return ("It is Palindrome")
+#    else: 
+#      return ("It is not Palindrome")
 
-#3 1234321 - check if the given number is palindrome
+# result = palindrome("1234321")
+# print(result)
+
+# result2 = palindrome("1234325")
+# print(result2)
+
+
 # #4 find those pair of numbers such that their sum is divisible by 2
 # numbers_list = [(10,22), (20, -15), (8,8), (1,2)]
 # result = [(x,y) for (x,y) in numbers_list if (x + y ) % 2 == 0 ]
