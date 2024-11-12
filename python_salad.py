@@ -3,8 +3,6 @@
 # word = "apple is fruit"
 # # result = fruit is apple
 
-
-
 # # 2 malayalam - check if this string is palindrome
 # def palindrome(given_word): 
 #     if given_word[::-1] == given_word:
@@ -53,31 +51,69 @@
 # result = [(math.sqr(x), pow(x,3)) for x in numbers]
 # print(result)
 
+
+
+
+
+
+
+
 # # Python Program to Find All the Divisors of an Integer
+integer = 7 
+divisors = []
+
+for i in range(1,integer + 2): 
+    if integer % i == 0: 
+        divisors.append(i)
+
+print(divisors)
 
 
 # # Python Program to Find the Smallest Divisor of an Integer
+integer = 15
+divisors = []
 
+for i in range(1,integer + 2): 
+    if integer % i == 0: 
+        divisors.append(i)
+        min_value = min(divisors)
+
+print(min_value)
+
+
+# check if the given number is palindrome
+number = 1221
+
+def palindrome(given_number):
+    if given_number[0] == given_number[-1]: 
+        return "palindrome"
+
+result = palindrome(number)
+print(result)
+
+
+
+    
 # # Python Program to Count the Number of Digits in a Number
 
 
 # random list, sort it, then find median, and average, len is even 
-scores = [85, 92, 78, 88, 95,96]
+# scores = [85, 92, 78, 88, 95,96]
 
-def median(given_list): 
-   sorted_list = sorted(given_list)
-   length = len(sorted_list)
-   if length % 2 == 0: 
-    first_val = sorted_list[2]
-    second_val = sorted_list[3]
-    add = first_val + second_val
-    median = add / 2
-    return median, 
+# def median(given_list): 
+#    sorted_list = sorted(given_list)
+#    length = len(sorted_list)
+#    if length % 2 == 0: 
+#     first_val = sorted_list[2]
+#     second_val = sorted_list[3]
+#     add = first_val + second_val
+#     median = add / 2
+#     return median
 
-result = median(scores)
-print(result)
+# result = median(scores)
+# print(result)
       
 
 # random list, sort it, then find median, and average, len is even 
-# check if the given number is palindrome
+
 # fruit
