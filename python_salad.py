@@ -82,38 +82,41 @@ print(min_value)
 
 
 # check if the given number is palindrome
-number = 1221
+number = 167891
 
 def palindrome(given_number):
-    if given_number[0] == given_number[-1]: 
+    string_number = str(number)
+    if string_number == string_number[::-1]:
         return "palindrome"
+    else: 
+        return "not palindrome"
 
 result = palindrome(number)
 print(result)
 
+# random list, sort it, then find median, and average, len is odd
+scores = [85, 92, 78, 88, 95,96,100]
 
-
+def median_val(given_list): 
+    sorted_list = sorted(given_list)
+    length = len(sorted_list)
+    if length % 2 != 0: 
+        mid_val = length // 2 
+        average = sum(sorted_list)/length
+        return sorted_list[mid_val],average 
     
-# # Python Program to Count the Number of Digits in a Number
+    else: 
+        if length % 2 == 0: 
+            mid_1 = length // 2 - 1 
+            mid_2 = length // 2 
+            average = sum(sorted_list)/length
+            return (sorted_list[mid_1] + sorted_list[mid_2])/2, average
+        
+result = median_val(scores)
+print(result)
 
-
-# random list, sort it, then find median, and average, len is even 
-# scores = [85, 92, 78, 88, 95,96]
-
-# def median(given_list): 
-#    sorted_list = sorted(given_list)
-#    length = len(sorted_list)
-#    if length % 2 == 0: 
-#     first_val = sorted_list[2]
-#     second_val = sorted_list[3]
-#     add = first_val + second_val
-#     median = add / 2
-#     return median
-
-# result = median(scores)
-# print(result)
       
 
 # random list, sort it, then find median, and average, len is even 
-
+# Python Program to Count the Number of Digits in a Number
 # fruit
