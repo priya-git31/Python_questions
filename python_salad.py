@@ -1,11 +1,11 @@
-# 1 apple is fruit - return this in such a way that it prints fruit is apple 
+# # 1 apple is fruit - return this in such a way that it prints fruit is apple 
 
-# word = "apple is fruit"
-# # result = fruit is apple
+# # word = "apple is fruit"
+# # # result = fruit is apple
 
 # # 2 malayalam - check if this string is palindrome
 # def palindrome(given_word): 
-#     if given_word[::-1] == given_word:
+#     # if given_word[::-1] == given_word:
 #         return ("It is a Palindrome")
 #     else: 
 #         return ("It is not a Palindrome")
@@ -18,12 +18,12 @@
 
 
 
-# # 3 numbers = 1234321 - check if the given number is palindrome
-# def palindrome(given_numbers): 
-#    if given_numbers[::-1] == given_numbers:
-#      return ("It is a Palindrome")
-#    else: 
-#      return ("It is not a Palindrome")
+# # # 3 numbers = 1234321 - check if the given number is palindrome
+# # def palindrome(given_numbers): 
+# #    if given_numbers[::-1] == given_numbers:
+# #      return ("It is a Palindrome")
+# #    else: 
+# #      return ("It is not a Palindrome")
 
 # result = palindrome(1234321)
 # print(result)
@@ -53,70 +53,86 @@
 
 
 
+# # # Python Program to Find All the Divisors of an Integer
+# integer = 7 
+# divisors = []
+
+# for i in range(1,integer + 2): 
+#     if integer % i == 0: 
+#         divisors.append(i)
+
+# print(divisors)
 
 
+# # # Python Program to Find the Smallest Divisor of an Integer
+# integer = 15
+# divisors = []
+
+# for i in range(1,integer + 2): 
+#     if integer % i == 0: 
+#         divisors.append(i)
+#         min_value = min(divisors)
+
+# print(min_value)
 
 
+# # check if the given number is palindrome
+# number = 167891
 
-# # Python Program to Find All the Divisors of an Integer
-integer = 7 
-divisors = []
+# def palindrome(given_number):
+#     string_number = str(number)
+#     if string_number == string_number[::-1]:
+#         return "palindrome"
+#     else: 
+#         return "not palindrome"
 
-for i in range(1,integer + 2): 
-    if integer % i == 0: 
-        divisors.append(i)
+# result = palindrome(number)
+# print(result)
 
-print(divisors)
+# # random list, sort it, then find median, and average, len is odd
+# scores = [85, 92, 78, 88, 95,96,100]
 
-
-# # Python Program to Find the Smallest Divisor of an Integer
-integer = 15
-divisors = []
-
-for i in range(1,integer + 2): 
-    if integer % i == 0: 
-        divisors.append(i)
-        min_value = min(divisors)
-
-print(min_value)
-
-
-# check if the given number is palindrome
-number = 167891
-
-def palindrome(given_number):
-    string_number = str(number)
-    if string_number == string_number[::-1]:
-        return "palindrome"
-    else: 
-        return "not palindrome"
-
-result = palindrome(number)
-print(result)
-
-# random list, sort it, then find median, and average, len is odd
-scores = [85, 92, 78, 88, 95,96,100]
-
-def median_val(given_list): 
-    sorted_list = sorted(given_list)
-    length = len(sorted_list)
-    if length % 2 != 0: 
-        mid_val = length // 2 
-        average = sum(sorted_list)/length
-        return sorted_list[mid_val],average 
+# def median_val(given_list): 
+#     sorted_list = sorted(given_list)
+#     length = len(sorted_list)
+#     if length % 2 != 0: 
+#         mid_val = length // 2 
+#         average = sum(sorted_list)/length
+#         return sorted_list[mid_val],average 
     
-    else: 
-        if length % 2 == 0: 
-            mid_1 = length // 2 - 1 
-            mid_2 = length // 2 
-            average = sum(sorted_list)/length
-            return (sorted_list[mid_1] + sorted_list[mid_2])/2, average
+#     else: 
+#         if length % 2 == 0: 
+#             mid_1 = length // 2 - 1 
+#             mid_2 = length // 2 
+#             average = sum(sorted_list)/length
+#             return (sorted_list[mid_1] + sorted_list[mid_2])/2, average
         
-result = median_val(scores)
-print(result)
+# result = median_val(scores)
+# print(result)
 
       
+#III. 13 NOV 
+#1	Python Program to Check Whether a Given Number is Even or Odd
 
-# random list, sort it, then find median, and average, len is even 
-# Python Program to Count the Number of Digits in a Number
-# fruit
+number = 187
+
+if number % 2 == 0: 
+    print ("Even number")
+else: 
+    print("Odd Number")
+
+#Python Program to Check Whether a Number is Positive or Negative
+
+number = 16 
+
+if number > 0:
+    print("positive")
+else: 
+    print("negative")
+
+
+# Find numbers divisible by 7 and multiple of 5 in range 1-100
+
+for num in range(1,101): 
+    if (num % 7 == 0) and (num% 5 == 0): 
+        print(num)
