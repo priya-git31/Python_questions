@@ -111,28 +111,28 @@
 # print(result)
 
       
-#III. 13 NOV 
-#1	Python Program to Check Whether a Given Number is Even or Odd
+# #III. 13 NOV 
+# #1	Python Program to Check Whether a Given Number is Even or Odd
 
-number = 187
+# number = 187
 
-if number % 2 == 0: 
-    print ("Even number")
-else: 
-    print("Odd Number")
+# if number % 2 == 0: 
+#     print ("Even number")
+# else: 
+#     print("Odd Number")
 
-#Python Program to Check Whether a Number is Positive or Negative
+# #Python Program to Check Whether a Number is Positive or Negative
 
-number = 16 
+# number = 16 
 
-if number > 0:
-    print("positive")
-else: 
-    print("negative")
+# if number > 0:
+#     print("positive")
+# else: 
+#     print("negative")
 
 
-# Find numbers divisible by 7 and multiple of 5 in range 1-100
+# # Find numbers divisible by 7 and multiple of 5 in range 1-100
 
-for num in range(1,101): 
-    if (num % 7 == 0) and (num% 5 == 0): 
-        print(num)
+# for num in range(1,101): 
+#     if (num % 7 == 0) and (num% 5 == 0): 
+#         print(num)
