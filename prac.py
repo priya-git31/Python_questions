@@ -66,3 +66,12 @@ for i in range(1,11):
     if i % 2 != 0 and i % 3 != 0: 
         print(i)
 
+#7Python Program to Find Numbers which are Divisible by 7 and Multiple of 5 in a Given Range
+
+#8Python Program to Print All Numbers in a Range Divisible by a Given Number
+
+given_number = 2
+
+for i in range(1,12): 
+    if i % given_number == 0: 
+        print(i)
