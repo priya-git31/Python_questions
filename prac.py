@@ -75,3 +75,16 @@ given_number = 2
 for i in range(1,12): 
     if i % given_number == 0: 
         print(i)
+
+
+#12 Python Program to Count the Number of Digits in a Number
+
+given_number = 123457
+
+def count_digits(given_number): 
+    str_number = str(given_number)
+    length_number = len(str_number)
+    return length_number 
+
+result = count_digits(given_number)
+print(result)
