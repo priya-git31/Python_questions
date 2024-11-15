@@ -68,23 +68,58 @@ for i in range(1,11):
 
 #7Python Program to Find Numbers which are Divisible by 7 and Multiple of 5 in a Given Range
 
-#8Python Program to Print All Numbers in a Range Divisible by a Given Number
-
-given_number = 2
-
-for i in range(1,12): 
-    if i % given_number == 0: 
+for i in range(1,11): 
+    if i % 7 == 0 and i % 5 == 0: 
         print(i)
 
 
-#12 Python Program to Count the Number of Digits in a Number
 
-given_number = 123457
 
-def count_digits(given_number): 
-    str_number = str(given_number)
-    length_number = len(str_number)
-    return length_number 
+# #8Python Program to Print All Numbers in a Range Divisible by a Given Number
 
-result = count_digits(given_number)
-print(result)
+# given_number = 2
+
+# for i in range(1,12): 
+#     if i % given_number == 0: 
+#         print(i)
+
+
+# #12 Python Program to Count the Number of Digits in a Number
+
+# given_number = 123457
+
+# def count_digits(given_number): 
+#     str_number = str(given_number)
+#     length_number = len(str_number)
+#     return length_number 
+
+# result = count_digits(given_number)
+# print(result)
+
+
+# # 13 Python Program to Find All the Divisors of an Integer
+
+# # 14 Python Program to Find the Smallest Divisor of an Integer
+
+# # 17 Python Program to Print Table of a Given Number
+
+# # given_number = 3
+
+# # result = []
+
+# # def table(given_number): 
+# #     numbers = list(range(1,11))
+# #     for num in numbers: 
+# #         result.append(num * given_number)
+# #     return result 
+
+# # result = table(given_number)
+# # print(result)
+        
+# given_number = 4 
+
+# for num in range(1,11): 
+#     result = (given_number * num)
+#     print(result)
+
+
