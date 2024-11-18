@@ -79,6 +79,9 @@
 #         print(i)
 
 
+# #9  Python Program to Find Sum of Digits of a Number
+
+
 # #12 Python Program to Count the Number of Digits in a Number
 
 # # given_number = 123457
@@ -90,6 +93,18 @@
 
 # # result = count_digits(given_number)
 # # print(result)
+
+
+
+# 13 Python Program to Count the Number of Digits in a Number
+
+given_value = 14 
+n = given_value
+
+for i in range(1,n + 1): 
+    if given_value % i == 0: 
+        print(i)
+
 
 
 # # l = list(str(123))
@@ -147,9 +162,9 @@
 
 # 20 Python Program to Check Whether a given Year is a Leap Year
 
-year = 1904
+# year = 1904
 
-if year % 4 == 0 and year % 100 != 0: 
-    print("leap year")
-else: 
-    print("not leap year")
+# if year % 4 == 0 and year % 100 != 0: 
+#     print("leap year")
+# else: 
+#     print("not leap year")
