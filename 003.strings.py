@@ -60,3 +60,41 @@ print(count_l)
 # Is String 1 ending with an exclamation mark?
 ends_with = this_string.endswith("!")
 print(ends_with)
+
+# ------------------------ Questions on string 2
+another_string = "Python Programming"
+
+# How can you capitalize the first letter of each word in String 2?
+# string.capitalize(): Capitalizes the first character of the string.
+
+capitalize_string = another_string.title()
+print(capitalize_string)
+
+# What method allows you to check if String 2 contains only digits?
+# string.isdigit(): Returns True if all characters in the string are digits.
+
+is_digits = this_string.isdigit()
+print(is_digits)
+
+# How would you verify if String 2 is a valid identifier (variable name) in Python?
+print(this_string.isidentifier())
+
+
+# What is the result of replacing "Python" with "Java" in String 2?
+replaced_string = another_string.replace("Python", "Java")
+print(replaced_string)
+
+
+# What method is used to swap the case of characters in String 2?
+swapped_string = another_string.swapcase()
+print(swapped_string)
+
+# How do you determine if String 2 starts with any of the prefixes "Py" or "Java"?
+result = another_string.startswith("Py","Java")
+print(result)
+
+# What is the result of checking if String 2 matches a basic email address pattern?
+
+# How would you replace the first occurrence of "gram" with "code" in String 2?
+
+# Does String 2 contain only printable characters (no control characters)?
