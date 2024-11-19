@@ -22,6 +22,13 @@ print(d)
 
 # -------------- Data Types
 # What is the data type of my_list and how can you check it?
+print(type(my_list))
+
 # Convert b to a string and concatenate it with my_string.
+b = '3'
+c = b + ' ' + my_string
+print(c)
+
 # What is the difference between my_list and my_tuple?
+
 # How do you convert my_string to an integer? (Consider discussing what happens when conversion is not straightforward)
