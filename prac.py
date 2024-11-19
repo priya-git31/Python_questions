@@ -105,6 +105,20 @@ for i in range(1,n + 1):
     if given_value % i == 0: 
         print(i)
 
+# 14 Python Program to Find the Smallest Divisor of an Integer
+# given_value = 14 
+# n = given_value
+
+# total = []
+
+# for i in range(1,n + 1): 
+#     if given_value % i == 0: 
+#         append_total = total.append(i)
+        
+# min_val = min(total)
+# print(min_val)
+
+
 
 
 # # l = list(str(123))
@@ -168,3 +182,20 @@ for i in range(1,n + 1):
 #     print("leap year")
 # else: 
 #     print("not leap year")
+
+# 21 Python Program to Convert Centimeters to Feet and Inches
+
+# cm = int(input("Enter height in centimeters: "))
+
+# inches = cm * 0.393701 
+# feet = cm * 0.0328084
+# print(inches)
+# print(feet)
+
+#22 Python Program to Read a Number n and Compute n+nn+nnn
+
+number = int(input("Enter a number"))
+
+temp = str(n)
+t1 = temp + temp
+print(t1)
