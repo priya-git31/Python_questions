@@ -1,5 +1,13 @@
 
+# 4 Python Program to Replace All Occurrences of ‘a’ with $ in a String
+# string_input = input("Enter a string: ")
 
+# def replace_string(given_string,existing,replaced): 
+#     result = given_string.replace(existing, replaced)
+#     return result
+
+# result = replace_string(string_input, "a", "$")
+# print(result)   
 
 
 # # Python Program to Remove the nth Index Character from a Non-Empty String
@@ -13,13 +21,12 @@
 # result = remove_string_index(string_input,srting_index_remove)
 # print(result)
 
-# Python Program to Replace All Occurrences of ‘a’ with $ in a String
+# Python Program to Replace Every Blank Space with Hyphen in a String
 string_input = input("Enter a string: ")
 
 def replace_string(given_string,existing,replaced): 
     result = given_string.replace(existing, replaced)
     return result
 
-result = replace_string(string_input, "a", "$")
-print(result)   
-
+result = replace_string(string_input, " ", "-")
+print(result) 
