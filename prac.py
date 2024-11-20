@@ -11,40 +11,42 @@
 
 #1Python Program to Check Whether a Given Number is Even or Odd
 
-# number = 15
+number = 15
 
-# if number % 2 == 0: 
-#     print("even number")
-# else: 
-#     print("odd number")
+if number % 2 ==0: 
+    print("even number")
+else: 
+    print("odd number")
 
 # #2Python Program to Check Whether a Number is Positive or Negative
 # number = 17
 
-# if number > 0: 
-#     print("positive number")
-# else: 
-#     print("negative number")
+if number > 0: 
+    print("positive number")
+else: 
+    print("negative number")
+
+
 
 # #3Python Program to Print All Odd Numbers in a Range
 
-# for i in range(1,11): 
-#     if i % 2 != 0: 
-#         print(i)
+for i in range(1,11): 
+    if i % 2 != 0: 
+        print(i)
 
 # #4Python Program to Check if a Number is a Palindrome
 
-# number = 1221
+number = 1221
 
-# def palindrome(given_number): 
-#     string_number = str(given_number)
-#     if string_number == string_number[::-1]: 
-#         return "palindrome"
-#     else: 
-#         return "not palindrome"
-    
-# result = palindrome(number)
-# print(result)
+def check_pal(given_number):
+    str_num = str(given_number)
+    if str_num == str_num[::-1]: 
+        return "palindrome"
+
+result = check_pal(number)
+print(result)
+
+
 
 # #5Python Program to Reverse a Number
 
@@ -98,12 +100,12 @@
 
 # 13 Python Program to Count the Number of Digits in a Number
 
-given_value = 14 
-n = given_value
+# given_value = 14 
+# n = given_value
 
-for i in range(1,n + 1): 
-    if given_value % i == 0: 
-        print(i)
+# for i in range(1,n + 1): 
+#     if given_value % i == 0: 
+#         print(i)
 
 # 14 Python Program to Find the Smallest Divisor of an Integer
 # given_value = 14 
@@ -194,8 +196,8 @@ for i in range(1,n + 1):
 
 #22 Python Program to Read a Number n and Compute n+nn+nnn
 
-number = int(input("Enter a number"))
+# number = int(input("Enter a number"))
 
-temp = str(n)
-t1 = temp + temp
-print(t1)
+# temp = str(n)
+# t1 = temp + temp
+# print(t1)
