@@ -47,18 +47,17 @@ result = check_pal(number)
 print(result)
 
 
+#5Python Program to Reverse a Number
 
-# #5Python Program to Reverse a Number
+number = 1290
 
-# number = 1290
+def reverse_number(number): 
+    str_number = str(number)
+    result = str_number[::-1]
+    return result 
 
-# def reverse_number(number): 
-#     str_number = str(number)
-#     result = str_number[::-1]
-#     return result 
-
-# result = reverse_number(number)
-# print(result)
+result = reverse_number(number)
+print(result)
 
 # # 6 Python Program to Print All Integers that Aren’t Divisible by Either 2 or 3
 
@@ -201,3 +200,13 @@ print(result)
 # temp = str(n)
 # t1 = temp + temp
 # print(t1)
+
+# Python Program to Check Prime Number
+# Prime numbers are natural numbers that are divisible by only 1 and the number itself
+
+number = 3 
+
+for i in range(2, n+1): 
+    if i % number != 0: 
+        print(i)
+
