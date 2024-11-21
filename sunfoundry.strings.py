@@ -86,11 +86,42 @@
 #         empty_string = empty_string + 1
 # print(empty_string)
 
+# given_string = input("Enter a word: ")
+
+# count = 0 
+
+# for i in given_string:
+#     if i.islower(): 
+#         count = count + 1
+# print(count)
+
+# 11 Python Program to Count the Number of Digits and Letters in a String
+
+# given_string = "Apple is 4"
+
+# count_letter = 0 
+# count_digit = 0 
+
+# for i in given_string: 
+#     if i.isdigit(): 
+#         count_letter = count_letter + 1
+#     else: 
+#         if i.isalpha(): 
+#             count_digit = count_digit + 1
+# print(count_letter)
+# print(count_digit)
+
+# Python Program to Count Number of Uppercase and Lowercase Letters in a String
 given_string = input("Enter a word: ")
 
-count = 0 
+lower_count = 0 
+upper_count = 0 
 
-for i in given_string:
+for i in given_string: 
     if i.islower(): 
-        count = count + 1
-print(count)
+        lower_count = lower_count + 1 
+    else: 
+        if i.isupper(): 
+            upper_count = upper_count + 1 
+print(f"lower count is {lower_count}")
+print(f"upper count is {upper_count}")
