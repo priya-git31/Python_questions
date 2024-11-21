@@ -77,11 +77,20 @@
 
 # # 11 Python Program to Count Number of Lowercase Characters in a String
 
+# given_string = input("Enter a word: ")
+
+# empty_string = 0 
+
+# for i in given_string: 
+#     if i == i.lower():
+#         empty_string = empty_string + 1
+# print(empty_string)
+
 given_string = input("Enter a word: ")
 
-empty_string = 0 
+count = 0 
 
-for i in given_string: 
-    if i == i.lower():
-        empty_string = empty_string + 1
-print(empty_string)
+for i in given_string:
+    if i.islower(): 
+        count = count + 1
+print(count)
