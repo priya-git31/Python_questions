@@ -111,17 +111,30 @@
 # print(count_letter)
 # print(count_digit)
 
-# Python Program to Count Number of Uppercase and Lowercase Letters in a String
-given_string = input("Enter a word: ")
+# 13 Python Program to Count Number of Uppercase and Lowercase Letters in a String
+# given_string = input("Enter a word: ")
 
-lower_count = 0 
-upper_count = 0 
+# lower_count = 0 
+# upper_count = 0 
 
-for i in given_string: 
-    if i.islower(): 
-        lower_count = lower_count + 1 
+# for i in given_string: 
+#     if i.islower(): 
+#         lower_count = lower_count + 1 
+#     else: 
+#         if i.isupper(): 
+#             upper_count = upper_count + 1 
+# print(f"lower count is {lower_count}")
+# print(f"upper count is {upper_count}")
+
+#28 Python Program to Check if a Given String is Palindrome
+
+given_string = "malayalam"
+
+def is_palindrome(given_string): 
+    if given_string == given_string[::-1]: 
+        return "Palindrome"
     else: 
-        if i.isupper(): 
-            upper_count = upper_count + 1 
-print(f"lower count is {lower_count}")
-print(f"upper count is {upper_count}")
+        return "Not Palindrome"
+    
+result = is_palindrome(given_string)
+print(result)
