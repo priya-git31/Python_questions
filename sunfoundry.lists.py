@@ -102,13 +102,27 @@
 # result = remove_duplicates(my_list)
 # print(result)
 
-my_list_1 = [6,7,8,9,9]
-my_list_2 = [1,2,23,4,5]
 
-def combined_list(my_list_1,my_list_2): 
-    combined_list = my_list_1 + my_list_2
-    sorted_combined_list = sorted(combined_list)
-    return sorted_combined_list
+#10  Python Program to Merge Two Lists and Sort it
+# my_list_1 = [6,7,8,9,9]
+# my_list_2 = [1,2,23,4,5]
 
-result = combined_list(my_list_1,my_list_2)
-print(result)
+# def combined_list(my_list_1,my_list_2): 
+#     combined_list = my_list_1 + my_list_2
+#     sorted_combined_list = sorted(combined_list)
+#     return sorted_combined_list
+
+# result = combined_list(my_list_1,my_list_2)
+# print(result)
+
+
+#16  Python Program to Generate Random Numbers from 1 to 20 and Append Them to the List
+
+import random
+
+empty_list = []
+
+for i in range(1,21): 
+    empty_list.append(random.randint(1,20))
+
+print(empty_list)
