@@ -118,11 +118,53 @@
 
 #16  Python Program to Generate Random Numbers from 1 to 20 and Append Them to the List
 
-import random
+# import random
 
-empty_list = []
+# empty_list = []
 
-for i in range(1,21): 
-    empty_list.append(random.randint(1,20))
+# for i in range(1,21): 
+#     empty_list.append(random.randint(1,20))
 
-print(empty_list)
+# print(empty_list)
+
+
+#12  Python Program to Swap the First and Last Element in a List
+
+# my_list = ["d", "b", "c"]
+
+# new_list = []
+
+# def swapped_list(my_list): 
+#     first_element = my_list[0]
+#     last_element = my_list[-1]
+#     first,*other, last = my_list
+#     new_list = last_element, *other, first_element 
+#     return new_list
+
+# result = swapped_list(my_list)
+# print(result)
+
+# # Python Program to Return the Length of the Longest Word from the List of Words
+
+# my_list = ["apple", "ball", "cat"]
+
+
+
+# for item in my_list: 
+#     chars = list(item)
+#     length_chars = len(chars)
+
+# print(length_chars)
+
+# Python Program to Count Occurrences of Element in List
+
+my_items = ["1","3","4","4"]
+
+count_list = 0
+
+for item in my_items:
+    if item in count_list: 
+        count_list = count_list + 1
+    if item not in count_list: 
+        count_list = 1 
+print(count_list)
