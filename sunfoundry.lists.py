@@ -34,20 +34,73 @@
 # print(max_even)
 # print(max_odd)
 
-# Python Program to Split Even and Odd Elements into Two Lists
+# 4 Python Program to Split Even and Odd Elements into Two Lists
 
-my_list = [24, 23, 18, 8, 9, 5]
+# my_list = [24, 23, 18, 8, 9, 5]
 
-even_list = []
-odd_list = []
+# even_list = []
+# odd_list = []
 
-for i in my_list: 
-    if i % 2 == 0: 
-        even_list.append(i)
+# for i in my_list: 
+#     if i % 2 == 0: 
+#         even_list.append(i)
         
-    else: 
-        if i % 2 != 0: 
-            odd_list.append(i)
+#     else: 
+#         if i % 2 != 0: 
+#             odd_list.append(i)
             
-print(even_list)
-print(odd_list)
+# print(even_list)
+# print(odd_list)
+
+
+#5  Python Program to Find Average of a List
+# my_list = [10,23,98]
+
+# def average_of_list(my_list):
+#     sum_list = sum(my_list)
+#     length_list = len(my_list)
+#     average_list = sum_list/length_list
+#     return average_list
+
+# result = average_of_list(my_list)
+# print(result)
+
+# 6 Python Program to Print Sum of Negative Numbers, Positive Even & Odd Numbers in a List
+
+# my_list = [12, -12, 45,55,67,1,2,3,-11,-3,17]
+
+# even_list = []
+# odd_list = []
+# negative_list = []
+
+# for i in my_list: 
+#     if i % 2 == 0 and i > 0: 
+#         even_list.append(i)
+#         sum_even = sum(even_list)
+#     elif i % 2 != 0 and i > 0: 
+#         odd_list.append(i)
+#         sum_odd = sum(odd_list)
+#     elif i < 0: 
+#         negative_list.append(i)
+#         negative_sum = sum(negative_list)
+#     else: 
+#         print("No Match")
+
+# print(sum_even)
+# print(sum_odd)
+# print(negative_sum)
+
+
+# Python Program to Count Occurrences of Element in List
+
+
+#11 Python Program to Remove Duplicates from a List
+
+my_list = [12,12,13,13,13,14,4,5,6]
+
+def remove_duplicates(given_list): 
+    set_list = set(my_list)
+    return set_list 
+
+result = remove_duplicates(my_list)
+print(result)
