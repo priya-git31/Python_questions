@@ -91,16 +91,24 @@
 # print(negative_sum)
 
 
-# Python Program to Count Occurrences of Element in List
-
-
 #11 Python Program to Remove Duplicates from a List
 
-my_list = [12,12,13,13,13,14,4,5,6]
+# my_list = [12,12,13,13,13,14,4,5,6]
 
-def remove_duplicates(given_list): 
-    set_list = set(my_list)
-    return set_list 
+# def remove_duplicates(given_list): 
+#     set_list = set(my_list)
+#     return set_list 
 
-result = remove_duplicates(my_list)
+# result = remove_duplicates(my_list)
+# print(result)
+
+my_list_1 = [6,7,8,9,9]
+my_list_2 = [1,2,23,4,5]
+
+def combined_list(my_list_1,my_list_2): 
+    combined_list = my_list_1 + my_list_2
+    sorted_combined_list = sorted(combined_list)
+    return sorted_combined_list
+
+result = combined_list(my_list_1,my_list_2)
 print(result)
