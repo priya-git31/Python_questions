@@ -21,12 +21,12 @@
 # print(result) 
 
 
-# 2 Python Program to Remove Odd Indexed Characters in a string
+# # 2 Python Program to Remove Odd Indexed Characters in a string
 # string_temp = "Acotara"
 # print(string_temp[0::2])
 
 
-# 17 Python Program to Check if the Substring is Present in the Given String
+# # 17 Python Program to Check if the Substring is Present in the Given String
 # string_input = input("Enter a string: ")
 # string_substring = input("Enter a word: ")
 
@@ -40,7 +40,7 @@
 # print(result)
 
 
-# 22 Python Program to Create a New String Made up of First and Last 2 Characters
+# # 22 Python Program to Create a New String Made up of First and Last 2 Characters
 # original_string = input("Enter a word: ")
 
 # def creating_new(original_string): 
@@ -64,7 +64,7 @@
 # result = count_vowels(given_string)
 # print(result)
 
-#LOOPS 
+# LOOPS 
 # given_string = input("Enter a word: ")
 
 # empty_string = 0
@@ -126,15 +126,57 @@
 # print(f"lower count is {lower_count}")
 # print(f"upper count is {upper_count}")
 
-#28 Python Program to Check if a Given String is Palindrome
+# 28 Python Program to Check if a Given String is Palindrome
+# given_string = "yooy"
 
-given_string = "malayalam"
-
-def is_palindrome(given_string): 
-    if given_string == given_string[::-1]: 
-        return "Palindrome"
-    else: 
-        return "Not Palindrome"
+# def is_palindrome(given_string): 
+#     if given_string == given_string[::-1]: 
+#         return "Palindrome"
+#     else: 
+#         return "Not Palindrome"
     
-result = is_palindrome(given_string)
-print(result)
+# result = is_palindrome(given_string)
+# print(result)
+
+
+#7 Python Program to Reverse a String Without using Recursion
+# given_string = input("Enter a word: ")
+
+# def reverse_string(given_string): 
+#     result = given_string[::-1]
+#     return result 
+
+# result = reverse_string(given_string)
+# print(result)
+
+
+#9 Python Program to Find the Length of a String without Library Function
+
+# given_string = input("Enter a word: ")
+
+# count = 0 
+# for i in given_string: 
+#     count = count + 1 
+# print(count)
+
+# Python Program to Find the Larger String without using Built-in Functions
+
+string_1 = "Facebook"
+
+string_2 = "Instagram"
+
+count_1 = 0 
+count_2 = 0 
+
+for i in string_1: 
+    count_1 = count_1 + 1 
+
+for i in string_2: 
+    count_2 = count_2 + 1 
+
+if count_1 > count_2: 
+    print("String_1 greater than string_2")
+elif count_1 == count_2 :
+    print("String_1 and String_2 are equal")
+elif count_2 > count_1: 
+    print("String_2 is greater than String_1")

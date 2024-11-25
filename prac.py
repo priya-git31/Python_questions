@@ -201,12 +201,4 @@ print(result)
 # t1 = temp + temp
 # print(t1)
 
-# Python Program to Check Prime Number
-# Prime numbers are natural numbers that are divisible by only 1 and the number itself
-
-number = 3 
-
-for i in range(2, n+1): 
-    if i % number != 0: 
-        print(i)
 
