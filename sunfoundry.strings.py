@@ -159,24 +159,23 @@
 #     count = count + 1 
 # print(count)
 
-# Python Program to Find the Larger String without using Built-in Functions
+# 23 Python Program to Find the Larger String without using Built-in Functions
 
-string_1 = "Facebook"
+# string_1 = "Facebook"
+# string_2 = "Instagram"
 
-string_2 = "Instagram"
+# count_1 = 0 
+# count_2 = 0 
 
-count_1 = 0 
-count_2 = 0 
+# for i in string_1: 
+#     count_1 = count_1 + 1 
 
-for i in string_1: 
-    count_1 = count_1 + 1 
+# for i in string_2: 
+#     count_2 = count_2 + 1 
 
-for i in string_2: 
-    count_2 = count_2 + 1 
-
-if count_1 > count_2: 
-    print("String_1 greater than string_2")
-elif count_1 == count_2 :
-    print("String_1 and String_2 are equal")
-elif count_2 > count_1: 
-    print("String_2 is greater than String_1")
+# if count_1 > count_2: 
+#     print("String_1 greater than string_2")
+# elif count_1 == count_2 :
+#     print("String_1 and String_2 are equal")
+# elif count_2 > count_1: 
+#     print("String_2 is greater than String_1")

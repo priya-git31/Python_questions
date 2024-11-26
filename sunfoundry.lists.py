@@ -156,15 +156,7 @@
 
 # print(length_chars)
 
-# Python Program to Count Occurrences of Element in List
 
-my_items = ["1","3","4","4"]
-
-count_list = 0
-
-for item in my_items:
-    if item in count_list: 
-        count_list = count_list + 1
-    if item not in count_list: 
-        count_list = 1 
-print(count_list)
+# Python Program to Find the Union of Two Lists
+list_1 = [1,4,5,6]
+list_2 = [2,3,4]
