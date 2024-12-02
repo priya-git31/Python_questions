@@ -20,3 +20,27 @@
 
 # result = find_sum(dict_temp)
 # print(result)
+
+# Python Program to Multiply All the Items in a Dictionary
+# dict_temp={'A':10,'B':10,'C':239}
+# total = 1 
+
+# for values in dict_temp.values(): 
+#     total = values * total 
+# print(total)
+
+
+# Python Program to Remove a Key from a Dictionary
+
+# dict_temp={'A':10,'B':10,'C':239}
+
+# print(dict_temp)
+
+# key_del=input("Enter a key to be deleted(A,B,C,D): ")
+
+# if key_del in dict_temp: 
+#     del dict_temp[key_del]
+#     print(dict_temp)
+# else: 
+#     if key_del not in dict_temp: 
+#         print("Key not found")
