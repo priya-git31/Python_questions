@@ -44,3 +44,19 @@
 # else: 
 #     if key_del not in dict_temp: 
 #         print("Key not found")
+
+# Python Program to Add a Key-Value Pair to the Dictionary
+
+# key = input("Enter a key:")
+# value = input("Enter a value:")
+# temp_dict = {}
+
+# temp_dict.update({key:value})
+# print(temp_dict)
+
+# Python Program to Concatenate Two Dictionaries
+dict1 = {'a': 10, 'b': 20}
+dict2 = {'c': 30, 'd': 40}
+
+dict_merged = dict1 | dict2
+print(dict_merged)
