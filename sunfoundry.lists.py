@@ -158,5 +158,25 @@
 
 
 # Python Program to Find the Union of Two Lists
-list_1 = [1,4,5,6]
-list_2 = [2,3,4]
+# list_1 = [1,4,5,6]
+# list_2 = [2,3,4]
+
+
+# Python Program to Sort a List According to the Second Element in Sublist
+
+
+
+
+# Python Program to Return the Length of the Longest Word from the List of Words
+
+# Python Program to Find the Number Occurring Odd Number of Times in a List
+
+my_list = ["apple", "ball", "cat"]
+
+my_list_len = []
+
+for item in my_list: 
+    item_len = len(item)
+    my_list_len.append(item_len)
+    longest_word = max(my_list_len)
+print(longest_word)
