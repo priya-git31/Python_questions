@@ -55,8 +55,14 @@
 # print(temp_dict)
 
 # Python Program to Concatenate Two Dictionaries
-dict1 = {'a': 10, 'b': 20}
-dict2 = {'c': 30, 'd': 40}
+# dict1 = {'a': 10, 'b': 20}
+# dict2 = {'c': 30, 'd': 40}
 
-dict_merged = dict1 | dict2
-print(dict_merged)
+# dict_merged = dict1 | dict2
+# print(dict_merged)
+
+toys = ["teddy bear", "car", "doll", "robot"]
+prices = [10, 15, 12, 20]
+
+combined_dict = dict(zip(toys,prices))
+print(combined_dict)
