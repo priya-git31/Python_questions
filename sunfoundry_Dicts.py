@@ -61,6 +61,7 @@
 # dict_merged = dict1 | dict2
 # print(dict_merged)
 
+# Python Program to Map Two Lists into a Dictionary
 toys = ["teddy bear", "car", "doll", "robot"]
 prices = [10, 15, 12, 20]
 

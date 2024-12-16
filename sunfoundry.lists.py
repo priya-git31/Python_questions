@@ -162,21 +162,47 @@
 # list_2 = [2,3,4]
 
 
+# Python Program to Return the Length of the Longest Word from the List of Words
+# my_list = ["apple", "ball", "cat"]
+
+# my_list_len = []
+
+# for item in my_list: 
+#     item_len = len(item)
+#     my_list_len.append(item_len)
+#     longest_word = max(my_list_len)
+# print(longest_word)
+
+# Python Program to Count Occurrences of Element in List
+# my_list = ["apple", "ball", "cat", "cat"]
+
+# count_list = {}
+
+# for item in my_list: 
+#     if item in count_list: 
+#         count_list[item] = count_list[item] + 1 
+#     else: 
+#         count_list[item] = 1
+# print(count_list)
+
+# Python Program to Find the Union of Two Lists
+
+# list_1 = [1,4,5,6]
+# list_2 = [2,3,4]
+
+# union_two = list(set(list_1) | set(list_2))
+# print(union_two)
+
+# # Python Program to Find the Intersection of Two Lists
+# list_1 = [1,4,5,6]
+# list_2 = [2,3,4]
+
+# union_two = list(set(list_1) & set(list_2))
+# print(union_two)
+
 # Python Program to Sort a List According to the Second Element in Sublist
 
+lst = [[1, 4], [3, 2], [5, 6], [2, 1]]
 
-
-
-# Python Program to Return the Length of the Longest Word from the List of Words
-
-# Python Program to Find the Number Occurring Odd Number of Times in a List
-
-my_list = ["apple", "ball", "cat"]
-
-my_list_len = []
-
-for item in my_list: 
-    item_len = len(item)
-    my_list_len.append(item_len)
-    longest_word = max(my_list_len)
-print(longest_word)
+new_list = sorted(lst, key=lambda x:x[1])
+print(new_list)
