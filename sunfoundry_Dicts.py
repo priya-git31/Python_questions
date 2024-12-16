@@ -62,8 +62,46 @@
 # print(dict_merged)
 
 # Python Program to Map Two Lists into a Dictionary
-toys = ["teddy bear", "car", "doll", "robot"]
-prices = [10, 15, 12, 20]
+# toys = ["teddy bear", "car", "doll", "robot"]
+# prices = [10, 15, 12, 20]
 
-combined_dict = dict(zip(toys,prices))
-print(combined_dict)
+# combined_dict = dict(zip(toys,prices))
+# print(combined_dict)
+
+
+# Python Program to Create a Dictionary with Key as First 
+# Character and Value as Words Starting with that Character
+
+# words = ['apple', 'banana', 'ant', 'ball', 'cat']
+# result = {}
+
+# for word in words:
+#     first = word[0]  
+#     if first in result:
+#         result[first].append(word)
+#     else:
+#         result[first] = [word]
+
+# print(result)
+
+
+# Python Program to Create Dictionary that Contains Number
+
+# numbers = {}
+
+# for i in range(1,6): 
+#     numbers[i] = i * i
+# print(numbers)
+
+text = "hello world hello python world python"
+
+word_count = {}
+
+# Python Program to Count the Frequency of Each Word in a String using Dictionary
+for word in text.split():
+    if word in word_count:
+        word_count[word] = word_count[word] + 1   
+    else:
+        word_count[word] = 1     
+
+print(word_count)
