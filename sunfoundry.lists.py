@@ -202,7 +202,36 @@
 
 # Python Program to Sort a List According to the Second Element in Sublist
 
-lst = [[1, 4], [3, 2], [5, 6], [2, 1]]
+# lst = [[1, 4], [3, 2], [5, 6], [2, 1]]
 
-new_list = sorted(lst, key=lambda x:x[1])
-print(new_list)
+# new_list = sorted(lst, key=lambda x:x[1])
+# print(new_list)
+
+# Python Program to Find the Number Occurring Odd Number of Times in a List
+# numbers = [1, 2, 3, 2, 3, 1, 3]
+
+# def find_odd_occurring(numbers):
+#     odd_numbers_list = []
+    
+#     for num in set(numbers):
+#         if numbers.count(num) % 2 != 0:
+#             odd_numbers_list.append(num)
+#     return odd_numbers_list  # Return should be outside the for loop but inside the function
+
+# result = find_odd_occurring(numbers)
+# print(result)
+
+# Python Program to Find the Cumulative Sum of a List
+
+original_list = [1,2,3,4]
+
+def cumulative_sum_loop(orginal_list): 
+    cum_sum = []
+    total = 0 
+    for num in orginal_list: 
+        total = total + num 
+        cum_sum.append(total)
+    return cum_sum, total 
+
+result = cumulative_sum_loop(original_list)
+print(result)
