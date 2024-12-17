@@ -219,13 +219,44 @@
 # Python Program to Swap the First and the Last Character of a String
 #  string_input=input("Enter string_1:") 
 
-string_1 = "Hello"
+# string_1 = "Hello"
 
-def swap_first_last(string_1): 
-    if len(string_1) <= 1: 
-        return string_1
-    return string_1[-1] + string_1[1:-1] + string_1[0]
+# def swap_first_last(string_1): 
+#     if len(string_1) <= 1: 
+#         return string_1
+#     return string_1[-1] + string_1[1:-1] + string_1[0]
   
-result = swap_first_last(string_1)
-print(result)
+# result = swap_first_last(string_1)
+# print(result)
 
+# Python Program to Count the Occurrences of Each Word in a String
+
+# string1 = "Hello Python World"
+
+# def count_words(string1):
+#     words = string1.split()
+#     word_count = {}
+    
+#     for word in words:
+#         if word in word_count:
+#             word_count[word] += 1
+#         else:
+#             word_count[word] = 1
+#     return word_count
+
+# result = count_words(string1)
+# print(result)
+
+# Python Program to Count Number of Vowels in a String using Sets
+
+string1 = "Python"
+vowels = {"a", "i" , "e", "o", "u"}
+
+count_vowels = 0
+
+for letter in string1.lower(): 
+    if letter in vowels: 
+        count_vowels = count_vowels + 1 
+    else: 
+        count_vowels = 1
+print(count_vowels)
