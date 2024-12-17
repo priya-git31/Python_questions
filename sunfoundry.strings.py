@@ -249,14 +249,39 @@
 
 # Python Program to Count Number of Vowels in a String using Sets
 
-string1 = "Python"
-vowels = {"a", "i" , "e", "o", "u"}
+# string1 = "Python"
+# vowels = {"a", "i" , "e", "o", "u"}
 
-count_vowels = 0
+# count_vowels = 0
 
-for letter in string1.lower(): 
-    if letter in vowels: 
-        count_vowels = count_vowels + 1 
-    else: 
-        count_vowels = 1
-print(count_vowels)
+# for letter in string1.lower(): 
+#     if letter in vowels: 
+#         count_vowels = count_vowels + 1 
+#     else: 
+#         count_vowels = 1
+# print(count_vowels)
+
+# Python Program to Check whether two Strings are Anagrams
+# string1_input=input("Enter string1: ")
+# string2_input=input("Enter string_2: ")
+
+# def is_anagram(string1_input, string2_input):
+#     s1 = string1_input.replace(" ", "").lower()
+#     s2 = string2_input.replace(" ", "").lower()
+#     return sorted(s1) == sorted(s2)
+
+# result = is_anagram(string1_input,string2_input)
+# print(result)
+
+# Python Program to Remove the nth Index Character from a Non-Empty String
+
+string_1 = "Python"
+n = 3
+
+def remove_char(string_1): 
+    if len(string_1) <= 0:
+        return string_1
+    return string_1.pop[3]
+
+result = remove_char(string_1)
+print(result)
