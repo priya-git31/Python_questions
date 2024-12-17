@@ -11,53 +11,53 @@
 
 #1Python Program to Check Whether a Given Number is Even or Odd
 
-number = 15
+# number = 15
 
-if number % 2 ==0: 
-    print("even number")
-else: 
-    print("odd number")
+# if number % 2 ==0: 
+#     print("even number")
+# else: 
+#     print("odd number")
 
-# #2Python Program to Check Whether a Number is Positive or Negative
-# number = 17
+# # #2Python Program to Check Whether a Number is Positive or Negative
+# # number = 17
 
-if number > 0: 
-    print("positive number")
-else: 
-    print("negative number")
+# if number > 0: 
+#     print("positive number")
+# else: 
+#     print("negative number")
 
 
 
 # #3Python Program to Print All Odd Numbers in a Range
 
-for i in range(1,11): 
-    if i % 2 != 0: 
-        print(i)
+# for i in range(1,11): 
+#     if i % 2 != 0: 
+#         print(i)
 
-# #4Python Program to Check if a Number is a Palindrome
+# # #4Python Program to Check if a Number is a Palindrome
 
-number = 1221
+# number = 1221
 
-def check_pal(given_number):
-    str_num = str(given_number)
-    if str_num == str_num[::-1]: 
-        return "palindrome"
+# def check_pal(given_number):
+#     str_num = str(given_number)
+#     if str_num == str_num[::-1]: 
+#         return "palindrome"
 
-result = check_pal(number)
-print(result)
+# result = check_pal(number)
+# print(result)
 
 
 #5Python Program to Reverse a Number
 
-number = 1290
+# number = 1290
 
-def reverse_number(number): 
-    str_number = str(number)
-    result = str_number[::-1]
-    return result 
+# def reverse_number(number): 
+#     str_number = str(number)
+#     result = str_number[::-1]
+#     return result 
 
-result = reverse_number(number)
-print(result)
+# result = reverse_number(number)
+# print(result)
 
 # # 6 Python Program to Print All Integers that Aren’t Divisible by Either 2 or 3
 
@@ -202,3 +202,9 @@ print(result)
 # print(t1)
 
 
+# Python Program to Find Sum of Digits of a Number
+numbers = 12345
+number_total = sum(int(digit) for digit in str(numbers))
+print(number_total)
+
+# Python Program to Find Prime Numbers in a Given Range
