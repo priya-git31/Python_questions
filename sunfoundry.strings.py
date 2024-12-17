@@ -179,3 +179,17 @@
 #     print("String_1 and String_2 are equal")
 # elif count_2 > count_1: 
 #     print("String_2 is greater than String_1")
+
+# Python Program to Find Common Characters in Two Strings
+string_1 = "Hello"
+string_2 = "World"
+
+common_characters = set(string_1) & set(string_2)
+print(common_characters)
+
+# Python Program to Print All Letters Present in Both Strings
+string_1 = "Hello"
+string_2 = "World"
+
+all_characters = set(string_1) | set(string_2)
+print(all_characters)
