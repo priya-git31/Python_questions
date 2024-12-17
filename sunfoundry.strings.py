@@ -181,15 +181,26 @@
 #     print("String_2 is greater than String_1")
 
 # Python Program to Find Common Characters in Two Strings
-string_1 = "Hello"
-string_2 = "World"
+# string_1 = "Hello"
+# string_2 = "World"
 
-common_characters = set(string_1) & set(string_2)
-print(common_characters)
+# common_characters = set(string_1) & set(string_2)
+# print(common_characters)
 
-# Python Program to Print All Letters Present in Both Strings
-string_1 = "Hello"
-string_2 = "World"
+# # Python Program to Print All Letters Present in Both Strings
+# string_1 = "Hello"
+# string_2 = "World"
 
-all_characters = set(string_1) | set(string_2)
-print(all_characters)
+# all_characters = set(string_1) | set(string_2)
+# print(all_characters)
+
+# Python Program that Displays which Letters are in First String but not in Second
+string_input=input("Enter string_1:") 
+string_input_2=input("Enter string_2:") 
+
+def all_string_1(string_input,string_input_2): 
+    string_difference = set(string_input) - set(string_input_2)
+    return string_difference 
+
+result = all_string_1(string_input,string_input_2)
+print(result)
