@@ -195,12 +195,37 @@
 # print(all_characters)
 
 # Python Program that Displays which Letters are in First String but not in Second
-string_input=input("Enter string_1:") 
-string_input_2=input("Enter string_2:") 
+# string_input=input("Enter string_1:") 
+# string_input_2=input("Enter string_2:") 
 
-def all_string_1(string_input,string_input_2): 
-    string_difference = set(string_input) - set(string_input_2)
-    return string_difference 
+# def all_string_1(string_input,string_input_2): 
+#     string_difference = set(string_input) - set(string_input_2)
+#     return string_difference 
 
-result = all_string_1(string_input,string_input_2)
+# result = all_string_1(string_input,string_input_2)
+# print(result)
+
+# Python Program that Displays Letters that are not Common in Two Strings
+# string_input=input("Enter string_1:") 
+# string_input_2=input("Enter string_2:")
+
+# def not_common_strings(string_input,string_input_2): 
+#     difference_strings = set(string_input) ^ set(string_input_2)
+#     return difference_strings
+
+# result = not_common_strings(string_input, string_input_2)
+# print(result)
+
+# Python Program to Swap the First and the Last Character of a String
+#  string_input=input("Enter string_1:") 
+
+string_1 = "Hello"
+
+def swap_first_last(string_1): 
+    if len(string_1) <= 1: 
+        return string_1
+    return string_1[-1] + string_1[1:-1] + string_1[0]
+  
+result = swap_first_last(string_1)
 print(result)
+
