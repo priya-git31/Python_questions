@@ -208,3 +208,17 @@ number_total = sum(int(digit) for digit in str(numbers))
 print(number_total)
 
 # Python Program to Find Prime Numbers in a Given Range
+
+list_numbers = range(1,128)
+
+prime_numbers = []
+
+def is_prime(list_numbers): 
+    for num in list_numbers: 
+        if num % num == 0 and num % 1 == 0: 
+            prime_numbers.append(num)
+    else: 
+        return "Nothing"
+    
+result = is_prime(list_numbers)
+print(result)
