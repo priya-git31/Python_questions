@@ -152,16 +152,51 @@
 
 
 # Python Program to Count Number of Uppercase and Lowercase Letters in a String
-string_input=input("Enter a word: ")
+# string_input=input("Enter a word: ")
 
-count_lower = 0 
-count_upper = 0 
+# count_lower = 0 
+# count_upper = 0 
 
-for i in string_input: 
-    if i.islower(): 
-        count_lower = count_lower + 1 
-    elif i.isupper(): 
-        count_upper = count_upper + 1 
-print(count_lower, count_upper)
+# for i in string_input: 
+#     if i.islower(): 
+#         count_lower = count_lower + 1 
+#     elif i.isupper(): 
+#         count_upper = count_upper + 1 
+# print(count_lower, count_upper)
 
 # Python Program to Count the Number of Digits and Letters in a String
+
+# string_input=input("Enter a word: ")
+
+# count_digits = 0 
+# count_letters = 0 
+
+# for i in string_input: 
+#     if i.isdigit(): 
+#         count_digits = count_digits + 1 
+#     elif i.isalpha(): 
+#         count_letters = count_letters + 1 
+
+# print(count_digits,count_letters)
+
+# Python Program to Check if the Substring is Present in the Given String
+
+string_input=input("Enter a word: ")
+string_input2=input("Enter a word: ")
+
+def check_strings(string_input,string_input2): 
+    if string_input2 in string_input.lower(): 
+        return True
+    else: 
+        return False
+
+result = check_strings(string_input,"lah")
+print(result)
+
+# Python Program to Find Common Characters in Two Strings
+# Python Program to Print All Letters Present in Both Strings
+# Python Program that Displays which Letters are in First String but not in Second
+# Python Program that Displays Letters that are not Common in Two Strings
+# Python Program to Create a New String Made up of First and Last 2 Characters
+# Python Program to Find the Larger String without using Built-in Functions
+# Python Program to Swap the First and the Last Character of a String
