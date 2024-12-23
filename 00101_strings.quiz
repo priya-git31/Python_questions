@@ -111,3 +111,5 @@ middle = len(name)//2
 
 middle_chars = name[middle-1:middle+2]
 print(middle_chars)
+
+

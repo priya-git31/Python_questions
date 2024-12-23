@@ -285,3 +285,5 @@ def remove_char(string_1):
 
 result = remove_char(string_1)
 print(result)
+
+
