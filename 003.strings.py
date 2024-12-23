@@ -180,21 +180,34 @@
 # print(count_digits,count_letters)
 
 # Python Program to Check if the Substring is Present in the Given String
+# string_input=input("Enter a word: ")
+# string_input2=input("Enter a word: ")
 
-string_input=input("Enter a word: ")
-string_input2=input("Enter a word: ")
+# def check_strings(string_input,string_input2): 
+#     if string_input2 in string_input.lower(): 
+#         return True
+#     else: 
+#         return False
 
-def check_strings(string_input,string_input2): 
-    if string_input2 in string_input.lower(): 
-        return True
-    else: 
-        return False
-
-result = check_strings(string_input,"lah")
-print(result)
+# result = check_strings(string_input,"lah")
+# print(result)
 
 # Python Program to Find Common Characters in Two Strings
+string_input1=input("Enter a word:")
+string_input2=input("Enter a word:")
+
+common_chars = set(string_input1) & set(string_input2)
+print(common_chars)
+
+
 # Python Program to Print All Letters Present in Both Strings
+
+string_input1=input("Enter a word:")
+string_input2=input("Enter a word:")
+
+common_chars = set(string_input1) | set(string_input2)
+print(common_chars)
+
 # Python Program that Displays which Letters are in First String but not in Second
 # Python Program that Displays Letters that are not Common in Two Strings
 # Python Program to Create a New String Made up of First and Last 2 Characters
