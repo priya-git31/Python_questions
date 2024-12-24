@@ -193,23 +193,66 @@
 # print(result)
 
 # Python Program to Find Common Characters in Two Strings
-string_input1=input("Enter a word:")
-string_input2=input("Enter a word:")
+# string_input1=input("Enter a word:")
+# string_input2=input("Enter a word:")
 
-common_chars = set(string_input1) & set(string_input2)
-print(common_chars)
+# common_chars = set(string_input1) & set(string_input2)
+# print(common_chars)
 
 
-# Python Program to Print All Letters Present in Both Strings
+# # Python Program to Print All Letters Present in Both Strings
 
-string_input1=input("Enter a word:")
-string_input2=input("Enter a word:")
+# string_input1=input("Enter a word:")
+# string_input2=input("Enter a word:")
 
-common_chars = set(string_input1) | set(string_input2)
-print(common_chars)
+# common_chars = set(string_input1) | set(string_input2)
+# print(common_chars)
 
 # Python Program that Displays which Letters are in First String but not in Second
+
+# string_input1=input("Enter a word:")
+# string_input2=input("Enter a word:")
+
+# result = set(string_input1) - set(string_input2)
+# print(result)
+
+
 # Python Program that Displays Letters that are not Common in Two Strings
+
+# string_input1=input("Enter a word:")
+# string_input2=input("Enter a word:")
+
+# result = set(string_input1) ^ set(string_input2)
+# print(result)
+
+
 # Python Program to Create a New String Made up of First and Last 2 Characters
+# string_input1=input("Enter a word:")
+
+# first_character = string_input1[0]
+# last_two_characters = string_input1[-2:]
+# result = first_character + last_two_characters
+# print(result)
+
 # Python Program to Find the Larger String without using Built-in Functions
+string_1=input("Enter a word: ")
+string_2=input("Enter a word: ")
+
+count_1 = 0 
+count_2 = 0 
+
+for i in string_1: 
+    count_1 = count_1 + 1 
+
+for i in string_2: 
+    count_2 = count_2 + 1 
+
+if count_1 > count_2: 
+    print("String 1 is greater than 2")
+elif count_2 > count_1: 
+    print("String 2 is greater than 1")
+else:
+    print("Both are equal")
+
+
 # Python Program to Swap the First and the Last Character of a String
